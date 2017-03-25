@@ -36,4 +36,32 @@ Explicar como gerenciaremos e mitigaremos os riscos.
 
 \section{Desenvolvimento do Relatório}
 
-Explicar o método que utilizaremos para confecção do relatório.
+A confecção do relatório será dividida em dois fluxos - um geral, onde o
+conteudo será escrito e revisado, e a implantação no relatório, onde um
+membro que domine \LaTeX e
+Git\footnote{\url{https://git-scm.com/}} transcreverá o conteudo para o
+relatório final.
+
+\subsection{Fluxo 1 - Confecção Geral}
+
+\begin{enumerate}
+  \item O conteudo é escrito, de maneira formatada e com referências;
+  \item O conteudo é revisado pelo seu autor, que corrigirá defeitos encontrados;
+  \item O autor disponibiliza o conteudo em algum meio acessível pelos outros membros;
+  \item O autor cria uma \textit{issue} no repositório do
+    relatório\footnote{\url{https://github.com/CadeiraCuidadora/relatorio}}, explica brevemente
+    o conteudo criado, e disponibiliza o \textit{link} para o conteudo.
+  \item O criador da \textit{issue} a associa uma \textit{label} de relatório.
+\end{enumerate}
+
+\subsection{Fluxo 2 - Implantação no Relatório}
+
+\begin{enumerate}
+  \item Um membro que domine Git e \LaTeX encontra uma \textit{issue} que deseja
+  implantar no relatório;
+  \item Revisa o conteudo, e o transcreve para o relatório;
+  \item Relata na \textit{issue} associada se algum problema ocorreu, ou se terminou a transcrição;
+  \item Cria um \textit{merge request} para a \textit{branch master} no repositório;
+  \item Outro membro revisa o \textit{merge request}, e aceita ou relata as correções a serem feitas.
+\end{enumerate}
+
