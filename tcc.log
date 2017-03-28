@@ -1,16 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=latex 2016.12.14)  28 MAR 2017 10:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.14)  28 MAR 2017 10:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**tcc.tex fixos/informacoes.tex fixos/fichaCatalografica.tex fixos/folhaDeAprov
-acao.tex fixos/pacotes.tex fixos/comandos.tex fixos/setup.tex fixos/listasAutom
-aticas.tex fixos/indiceAutomatico.tex editaveis/informacoes.tex editaveis/errat
-a.tex editaveis/dedicatoria.tex editaveis/agradecimentos.tex editaveis/epigrafe
-.tex editaveis/resumo.tex editaveis/abstract.tex editaveis/abreviaturas.tex edi
-taveis/simbolos.tex editaveis/introducao.tex editaveis/aspectosgerais.tex edita
-veis/consideracoes.tex editaveis/textoepostexto.tex editaveis/elementosdotexto.
-tex editaveis/elementosdopostexto.tex editaveis/apendices.tex editaveis/anexos.
-tex
+**tcc.tex
 (./tcc.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
@@ -382,7 +374,7 @@ Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
@@ -459,20 +451,12 @@ ass
 \c@Hpagenote=\count146
 )
 
-Package hyperref Message: Driver (default): hdvips.
+Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/share/texmf-dist/tex/latex/hyperref/hdvips.def
-File: hdvips.def 2016/06/24 v6.83q Hyperref driver for dvips
-
-(/usr/share/texmf-dist/tex/latex/hyperref/pdfmark.def
-File: pdfmark.def 2016/06/24 v6.83q Hyperref definitions for pdfmark specials
-\pdf@docset=\toks23
-\pdf@box=\box29
-\pdf@toks=\toks24
-\pdf@defaulttoks=\toks25
-\HyField@AnnotCount=\count147
-\Fld@listcount=\count148
-\c@bookmark@seq@number=\count149
+(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
+\Fld@listcount=\count147
+\c@bookmark@seq@number=\count148
 
 (/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -480,13 +464,13 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip185
-))
+)
 (/usr/share/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
 
-(/usr/share/texmf-dist/tex/latex/oberdiek/bkm-dvips.def
-File: bkm-dvips.def 2016/05/17 v1.26 bookmark driver for dvips (HO)
-\BKM@id=\count150
+(/usr/share/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
+File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
+\BKM@id=\count149
 ))
 (/usr/share/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2016/04/23 3.9r The Babel package
@@ -496,7 +480,7 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/04/23 3.9r Babel common definitions
-\babel@savecnt=\count151
+\babel@savecnt=\count150
 \U@D=\dimen151
 )
 \l@canadian = a dialect from \language\l@american 
@@ -507,7 +491,7 @@ File: babel.def 2016/04/23 3.9r Babel common definitions
 Language: frenchb 2016/05/14 v3.2c French support from the babel system
 \l@acadian = a dialect from \language\l@french 
 \l@canadien = a dialect from \language\l@french 
-\FB@nonchar=\count152
+\FB@nonchar=\count151
 \FBcolonskip=\skip186
 \FBthinskip=\skip187
 Package babel Info: Making : an active character on input line 365.
@@ -515,11 +499,11 @@ Package babel Info: Making ; an active character on input line 366.
 Package babel Info: Making ! an active character on input line 367.
 Package babel Info: Making ? an active character on input line 368.
 \FBguillskip=\skip188
-\FBguill@level=\count153
-\FB@everypar=\toks26
+\FBguill@level=\count152
+\FB@everypar=\toks23
 \FB@Mht=\dimen152
-\std@mcc=\count154
-\dec@mcc=\count155
+\std@mcc=\count153
+\dec@mcc=\count154
 \listindentFB=\skip189
 \labelwidthFB=\skip190
 \leftmarginFB=\skip191
@@ -528,8 +512,8 @@ Package babel Info: Making ? an active character on input line 368.
 )
 (/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
-\es@quottoks=\toks27
-\es@quotdepth=\count156
+\es@quottoks=\toks24
+\es@quotdepth=\count155
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
@@ -544,21 +528,21 @@ Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip193
 \enit@outerparindent=\dimen154
-\enit@toks=\toks28
-\enit@inbox=\box30
-\enitdp@description=\count157
+\enit@toks=\toks25
+\enit@inbox=\box29
+\enitdp@description=\count156
 )
 (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count158
-\calc@Bcount=\count159
+\calc@Acount=\count157
+\calc@Bcount=\count158
 \calc@Adimen=\dimen155
 \calc@Bdimen=\dimen156
 \calc@Askip=\skip194
 \calc@Bskip=\skip256
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count160
+\calc@Ccount=\count159
 \calc@Cskip=\skip257
 )
 
@@ -581,27 +565,24 @@ Sidefoothsep and sidefootwidth: 7pt and 42pt
 Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 ******************************************************
 
-\c@abntex@bookmarkcounter=\count161
+\c@abntex@bookmarkcounter=\count160
 \cftlastnumwidth=\skip258
 \chapternamenumlength=\skip259
 \ABNTEXcitacaorecuo=\skip260
-\c@alineasi=\count162
-\c@alineasii=\count163
-\enitdp@alineas=\count164
-\c@subalineasi=\count165
-\enitdp@subalineas=\count166
-\c@incisosi=\count167
-\enitdp@incisos=\count168
+\c@alineasi=\count161
+\c@alineasii=\count162
+\enitdp@alineas=\count163
+\c@subalineasi=\count164
+\enitdp@subalineas=\count165
+\c@incisosi=\count166
+\enitdp@incisos=\count167
 \ABNTEXsignwidth=\skip261
 \ABNTEXsignthickness=\skip262
 \ABNTEXsignskip=\skip263
 ) (/usr/share/texmf-dist/tex/latex/cmap/cmap.sty
 Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
-
-
-Package cmap Warning: pdftex in DVI mode - exiting.
-
-) (/usr/share/texmf-dist/tex/latex/lm/lmodern.sty
+)
+(/usr/share/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -642,11 +623,11 @@ Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
 (/usr/share/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
+)<<t1.cmap>>)
 (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks29
-\inpenc@posthook=\toks30
+\inpenc@prehook=\toks26
+\inpenc@posthook=\toks27
 
 (/usr/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
@@ -971,13 +952,11 @@ Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: dvips.def on input line 147.
+Package color Info: Driver file: pdftex.def on input line 147.
 
-(/usr/share/texmf-dist/tex/latex/graphics-def/dvips.def
-File: dvips.def 2016/07/10 v3.1a Driver-dependent file (DPC,SPQR)
-)
-(/usr/share/texmf-dist/tex/latex/graphics/dvipsnam.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+\Gread@gobject=\count168
 ))
 (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -991,7 +970,7 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: dvips.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 )
 \Gin@req@height=\dimen157
 \Gin@req@width=\dimen158
@@ -1017,29 +996,13 @@ Package: abntex2cite 2016/02/26 v-1.9.6 abnTeX2
 \c@ABCIaux=\count169
 \c@ABCImax=\count170
 
-(/usr/share/texmf-dist/tex/latex/breakurl/breakurl.sty
-Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
-
-(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-
-(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks31
-\XKV@tempa@toks=\toks32
-)
-\XKV@depth=\count171
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-\burl@toks=\toks33
-)
 (/usr/share/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 \biblabelsep=\skip269
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
-\ABCItoken=\toks34
+\ABCItoken=\toks28
 )
 (/usr/share/texmf-dist/tex/latex/bold-extra/bold-extra.sty
 Package: bold-extra 2001/11/13 v0.1 Use fonts from cm/mf-extra/bold
@@ -1049,11 +1012,11 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 ))
 (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count172
-\float@exts=\toks35
-\float@box=\box31
-\@float@everytoks=\toks36
-\@floatcapt=\box32
+\c@float@type=\count171
+\float@exts=\toks29
+\float@box=\box30
+\@float@everytoks=\toks30
+\@floatcapt=\box31
 ) (./fixos/comandos.tex)
 (./fixos/customizacoes.sty) (./editaveis/informacoes.tex)
 (./fixos/informacoes.tex) (./fixos/setup.tex
@@ -1086,7 +1049,7 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 9.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\AtBeginShipoutBox=\box33
+\AtBeginShipoutBox=\box32
 Package hyperref Info: Link coloring ON on input line 9.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1095,7 +1058,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count173
+\c@section@level=\count172
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1106,35 +1069,84 @@ LaTeX Info: Redefining \nameref on input line 9.
 LaTeX Info: Redefining \degres on input line 9.
 LaTeX Info: Redefining \dots on input line 9.
 LaTeX Info: Redefining \up on input line 9.
-\myptabbox=\box34
+\myptabbox=\box33
 \myptabboxwidth=\skip270
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 9.
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count173
+\scratchdimen=\dimen159
+\scratchbox=\box34
+\nofMPsegments=\count174
+\nofMParguments=\count175
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count176
+\MPscratchDim=\dimen160
+\MPnumerator=\count177
+\makeMPintoPDFobject=\count178
+\everyMPtoPDFconversion=\toks32
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 12.
+
 (/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-File: figuras/capa.eps Graphic file (type eps)
- <figuras/capa.eps> [1
+Package epstopdf Info: Source file: <figuras/capa.eps>
+(epstopdf)                    date: 2017-03-28 10:25:33
+(epstopdf)                    size: 649636 bytes
+(epstopdf)             Output file: <figuras/capa-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-03-28 10:26:38
+(epstopdf)                    size: 105943 bytes
+(epstopdf)             Command: <repstopdf --outfile=figuras/capa-eps-converted
+-to.pdf figuras/capa.eps>
+(epstopdf)             \includegraphics on input line 12.
+Package epstopdf Info: Output file is already uptodate.
 
-]
+<figuras/capa-eps-converted-to.pdf, id=5, 814.04124pt x 1150.2975pt>
+File: figuras/capa-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figuras/capa-eps-converted-to.pdf>
+Package pdftex.def Info: figuras/capa-eps-converted-to.pdf used on input line 1
+2.
+(pdftex.def)             Requested size: 597.52437pt x 844.34396pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figuras/capa-eps-convert
+ed-to.pdf>]
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 14.
 
 (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
+)<<ot1.cmap>>
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 14.
 
 (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
+)<<oml.cmap>>
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 14.
 
 
 (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
+)<<oms.cmap>>
 LaTeX Font Info:    Try loading font information for OMX+lmex on input line 14.
 
 
@@ -1143,16 +1155,21 @@ File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 14.
+<<omx.cmap>>
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 14.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 14.
- [1
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14 
+      [1
 
 
 
-]
-(./fixos/fichaCatalografica.tex
+] (./fixos/fichaCatalografica.tex
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
@@ -1197,29 +1214,25 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ]) (./editaveis/abstract.tex [5
 
 ])
-(./fixos/listasAutomaticas.tex (./tcc.lof
-Overfull \hbox (6.26094pt too wide) in paragraph at lines 3--3
- [][] [] []  
- []
-
-) [6
+(./fixos/listasAutomaticas.tex (./tcc.lof) [6
 
 ] (./tcc.lot) [7
 
-]) (./editaveis/abreviaturas.tex [8
+])
+(./editaveis/abreviaturas.tex [8
+
+
+]) (./editaveis/simbolos.tex [9
 
 
 ])
-(./editaveis/simbolos.tex [9
-
-
-]) (./fixos/indiceAutomatico.tex (./tcc.toc
-[10
+(./fixos/indiceAutomatico.tex (./tcc.toc [10
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 67.
-) [11]) (./editaveis/introducao.tex
+) [11])
+(./editaveis/introducao.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--18
 
  []
@@ -1229,8 +1242,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--30
 
  []
 
-File: figuras/fishbone.eps Graphic file (type eps)
-<figuras/fishbone.eps>
+Package epstopdf Info: Source file: <figuras/fishbone.eps>
+(epstopdf)                    date: 2017-03-28 10:36:06
+(epstopdf)                    size: 73781 bytes
+(epstopdf)             Output file: <figuras/fishbone-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-03-28 10:42:13
+(epstopdf)                    size: 80115 bytes
+(epstopdf)             Command: <repstopdf --outfile=figuras/fishbone-eps-conve
+rted-to.pdf figuras/fishbone.eps>
+(epstopdf)             \includegraphics on input line 37.
+Package epstopdf Info: Output file is already uptodate.
+<figuras/fishbone-eps-converted-to.pdf, id=208, 722.7pt x 542.025pt>
+File: figuras/fishbone-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figuras/fishbone-eps-converted-to.pdf>
+Package pdftex.def Info: figuras/fishbone-eps-converted-to.pdf used on input li
+ne 37.
+(pdftex.def)             Requested size: 361.3491pt x 271.01183pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1239,8 +1268,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--51
 
  []
 
-File: figuras/ldrive.eps Graphic file (type eps)
-<figuras/ldrive.eps> [12
+Package epstopdf Info: Source file: <figuras/ldrive.eps>
+(epstopdf)                    date: 2017-03-28 10:36:06
+(epstopdf)                    size: 707234 bytes
+(epstopdf)             Output file: <figuras/ldrive-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-03-28 10:42:13
+(epstopdf)                    size: 47361 bytes
+(epstopdf)             Command: <repstopdf --outfile=figuras/ldrive-eps-convert
+ed-to.pdf figuras/ldrive.eps>
+(epstopdf)             \includegraphics on input line 58.
+Package epstopdf Info: Output file is already uptodate.
+<figuras/ldrive-eps-converted-to.pdf, id=210, 549.05125pt x 211.79124pt>
+File: figuras/ldrive-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figuras/ldrive-eps-converted-to.pdf>
+Package pdftex.def Info: figuras/ldrive-eps-converted-to.pdf used on input line
+ 58.
+(pdftex.def)             Requested size: 384.33325pt x 148.25285pt.
+ [12
 
 
 ]
@@ -1248,7 +1293,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--68
 
  []
 
-[13]
+[13pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.73 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.1
+.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.73 
+      <./figuras/fishbone-eps-converted-to.pdf> <./figuras/ldrive-eps-converted
+-to.pdf>]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 87.
  (/usr/share/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1259,29 +1317,80 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (./editaveis/metodologia.tex [14] [15
 
 ] [16]
-File: figuras/fluxo1.eps Graphic file (type eps)
- <figuras/fluxo1.eps> [17])
-(./editaveis/tempo.tex [18]) (./editaveis/requisitos.tex [19
+Package epstopdf Info: Source file: <figuras/fluxo1.eps>
+(epstopdf)                    date: 2017-03-28 10:36:06
+(epstopdf)                    size: 11867 bytes
+(epstopdf)             Output file: <figuras/fluxo1-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-03-28 10:42:14
+(epstopdf)                    size: 5686 bytes
+(epstopdf)             Command: <repstopdf --outfile=figuras/fluxo1-eps-convert
+ed-to.pdf figuras/fluxo1.eps>
+(epstopdf)             \includegraphics on input line 86.
+Package epstopdf Info: Output file is already uptodate.
+
+<figuras/fluxo1-eps-converted-to.pdf, id=241, 412.54124pt x 156.585pt>
+File: figuras/fluxo1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figuras/fluxo1-eps-converted-to.pdf>
+Package pdftex.def Info: figuras/fluxo1-eps-converted-to.pdf used on input line
+ 86.
+(pdftex.def)             Requested size: 455.0pt x 172.70276pt.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.106   \item R
+               elata na \textit{issue} associada se algum problema ocorreu, ...
+ <./figuras/fluxo1-eps-converted-to.pdf>]) (./editaveis/tempo.tex [18])
+(./editaveis/requisitos.tex [19
 
 ] [20
 
-])
-(./editaveis/riscos.tex [21]) (./editaveis/custos.tex [22
+]) (./editaveis/riscos.tex [21])
+(./editaveis/custos.tex [22
 
-])
-(./editaveis/visaogeral.tex [23
+]) (./editaveis/visaogeral.tex [23
 
 ]
-File: figuras/arquitetura-monitoramentoecontrole.eps Graphic file (type eps)
+Package epstopdf Info: Source file: <figuras/arquitetura-monitoramentoecontrole
+.eps>
+(epstopdf)                    date: 2017-03-28 10:36:06
+(epstopdf)                    size: 153016 bytes
+(epstopdf)             Output file: <figuras/arquitetura-monitoramentoecontrole
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-03-28 10:42:14
+(epstopdf)                    size: 53822 bytes
+(epstopdf)             Command: <repstopdf --outfile=figuras/arquitetura-monito
+ramentoecontrole-eps-converted-to.pdf figuras/arquitetura-monitoramentoecontrol
+e.eps>
+(epstopdf)             \includegraphics on input line 35.
+Package epstopdf Info: Output file is already uptodate.
 
-<figuras/arquitetura-monitoramentoecontrole.eps> [24
+<figuras/arquitetura-monitoramentoecontrole-eps-converted-to.pdf, id=331, 532.9
+9126pt x 417.56pt>
+File: figuras/arquitetura-monitoramentoecontrole-eps-converted-to.pdf Graphic f
+ile (type pdf)
 
-]) (./tcc.bbl (./tcc.brf)
+<use figuras/arquitetura-monitoramentoecontrole-eps-converted-to.pdf>
+Package pdftex.def Info: figuras/arquitetura-monitoramentoecontrole-eps-convert
+ed-to.pdf used on input line 35.
+(pdftex.def)             Requested size: 455.0pt x 356.46954pt.
+ [24
+
+])
+(./tcc.bbl (./tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
+ [25pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+4}) has been already used, duplicate ignored
 
-[25] [26]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3 ...th{\labelsep}{0pt}\begin{thebibliography}{}
+                                                   <./figuras/arquitetura-monit
+oramentoecontrole-eps-converted-to.pdf>] [26]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
@@ -1328,12 +1437,9 @@ AED: lastpage setting LastPage
 \openout8 = `tcc.toc'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 51.
-\BKM@file=\write9
-\openout9 = `tcc.out.ps'.
-
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
  (./tcc.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 51.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
 (rerunfilecheck)             Checksum: C87AD775503754C5AB47AD31196E8ADA;86.
@@ -1344,12 +1450,29 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 12551 strings out of 493014
- 181389 string characters out of 6139342
- 312662 words of memory out of 5000000
- 15810 multiletter control sequences out of 15000+600000
+ 12846 strings out of 493013
+ 185127 string characters out of 6139316
+ 310639 words of memory out of 5000000
+ 15904 multiletter control sequences out of 15000+600000
  82133 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,12n,51p,1341b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,38p,715b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fo
+nts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.
+enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf-d
+ist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/
+lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1
+/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></us
+r/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/
+type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.
+pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-d
+ist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/
+lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on tcc.pdf (34 pages, 586708 bytes).
+PDF statistics:
+ 650 PDF objects out of 1000 (max. 8388607)
+ 581 compressed objects within 6 object streams
+ 153 named destinations out of 1000 (max. 500000)
+ 542 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on tcc.dvi (34 pages, 111828 bytes).
