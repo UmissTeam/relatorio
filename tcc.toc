@@ -5,82 +5,84 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{21}{chapter.1}
-\contentsline {section}{\numberline {1.1}O Problema}{21}{section.1.1}
-\contentsline {section}{\numberline {1.2}Estado da Arte}{21}{section.1.2}
-\contentsline {section}{\numberline {1.3}Objetivos}{22}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Geral}{22}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Espec\IeC {\'\i }ficos}{22}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Proposta de Solu\IeC {\c c}\IeC {\~a}o}{22}{section.1.4}
-\contentsline {section}{\numberline {1.5}Escopo}{22}{section.1.5}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{12}{chapter.1}
+\contentsline {section}{\numberline {1.1}O Problema}{12}{section.1.1}
+\contentsline {section}{\numberline {1.2}Estado da Arte}{12}{section.1.2}
+\contentsline {section}{\numberline {1.3}Objetivos}{14}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Geral}{14}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Espec\IeC {\'\i }ficos}{14}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Proposta de Solu\IeC {\c c}\IeC {\~a}o}{14}{section.1.4}
+\contentsline {section}{\numberline {1.5}Escopo}{14}{section.1.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Metodologia}}{23}{chapter.2}
-\contentsline {section}{\numberline {2.1}Termo de Abertura do Projeto - TAP}{23}{section.2.1}
-\contentsline {section}{\numberline {2.2}Estrutura Anal\IeC {\'\i }tica do Projeto (EAP)}{23}{section.2.2}
-\contentsline {section}{\numberline {2.3}Comunica\IeC {\c c}\IeC {\~a}o}{23}{section.2.3}
-\contentsline {section}{\numberline {2.4}Custos}{23}{section.2.4}
-\contentsline {section}{\numberline {2.5}Tempo}{23}{section.2.5}
-\contentsline {section}{\numberline {2.6}Recursos Humanos}{23}{section.2.6}
-\contentsline {section}{\numberline {2.7}Requisitos}{23}{section.2.7}
-\contentsline {section}{\numberline {2.8}Riscos}{23}{section.2.8}
-\contentsline {section}{\numberline {2.9}Desenvolvimento do Relat\IeC {\'o}rio}{24}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Fluxo 1 - Confec\IeC {\c c}\IeC {\~a}o Geral}{24}{subsection.2.9.1}
-\contentsline {subsection}{\numberline {2.9.2}Fluxo 2 - Implanta\IeC {\c c}\IeC {\~a}o no Relat\IeC {\'o}rio}{24}{subsection.2.9.2}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Metodologia}}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}Termo de Abertura do Projeto - TAP}{15}{section.2.1}
+\contentsline {section}{\numberline {2.2}Estrutura Anal\IeC {\'\i }tica do Projeto (EAP)}{15}{section.2.2}
+\contentsline {section}{\numberline {2.3}Comunica\IeC {\c c}\IeC {\~a}o}{15}{section.2.3}
+\contentsline {section}{\numberline {2.4}Custos}{15}{section.2.4}
+\contentsline {section}{\numberline {2.5}Tempo}{15}{section.2.5}
+\contentsline {section}{\numberline {2.6}Recursos Humanos}{15}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Gerenciamento}{16}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Subprojetos}{16}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}Requisitos}{16}{section.2.7}
+\contentsline {section}{\numberline {2.8}Riscos}{17}{section.2.8}
+\contentsline {section}{\numberline {2.9}Desenvolvimento do Relat\IeC {\'o}rio}{17}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Fluxo 1 - Cria\IeC {\c c}\IeC {\~a}o do conte\IeC {\'u}do}{17}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Fluxo 2 - Implanta\IeC {\c c}\IeC {\~a}o no Relat\IeC {\'o}rio}{17}{subsection.2.9.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Tempo}}{25}{chapter.3}
-\contentsline {section}{\numberline {3.1}Tarefas}{25}{section.3.1}
-\contentsline {section}{\numberline {3.2}Cronograma}{25}{section.3.2}
-\contentsline {section}{\numberline {3.3}Restri\IeC {\c c}\IeC {\~o}es}{25}{section.3.3}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Tempo}}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}Tarefas}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}Cronograma}{19}{section.3.2}
+\contentsline {section}{\numberline {3.3}Restri\IeC {\c c}\IeC {\~o}es}{19}{section.3.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Requisitos}}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}Requisitos Gerais}{27}{section.4.1}
-\contentsline {section}{\numberline {4.2}Subsistema - Controle e Monitoramento}{27}{section.4.2}
-\contentsline {section}{\numberline {4.3}Alimenta\IeC {\c c}\IeC {\~a}o}{27}{section.4.3}
-\contentsline {section}{\numberline {4.4}Estrutura}{27}{section.4.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Requisitos}}{20}{chapter.4}
+\contentsline {section}{\numberline {4.1}Requisitos Gerais}{20}{section.4.1}
+\contentsline {section}{\numberline {4.2}Subsistema - Controle e Monitoramento}{20}{section.4.2}
+\contentsline {section}{\numberline {4.3}Alimenta\IeC {\c c}\IeC {\~a}o}{21}{section.4.3}
+\contentsline {section}{\numberline {4.4}Estrutura}{21}{section.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Riscos}}{29}{chapter.5}
-\contentsline {subsection}{\numberline {5.0.1}Gerais}{29}{subsection.5.0.1}
-\contentsline {subsection}{\numberline {5.0.2}Especificos}{29}{subsection.5.0.2}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Riscos}}{22}{chapter.5}
+\contentsline {subsection}{\numberline {5.0.1}Gerais}{22}{subsection.5.0.1}
+\contentsline {subsection}{\numberline {5.0.2}Especificos}{22}{subsection.5.0.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Custos}}{31}{chapter.6}
-\contentsline {section}{\numberline {6.1}Custos Gerais}{31}{section.6.1}
-\contentsline {section}{\numberline {6.2}Custos esperados}{31}{section.6.2}
-\contentsline {section}{\numberline {6.3}Custos desprezados}{31}{section.6.3}
-\contentsline {section}{\numberline {6.4}Balan\IeC {\c c}o final}{31}{section.6.4}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Custos}}{23}{chapter.6}
+\contentsline {section}{\numberline {6.1}Custos Gerais}{23}{section.6.1}
+\contentsline {section}{\numberline {6.2}Custos esperados}{23}{section.6.2}
+\contentsline {section}{\numberline {6.3}Custos desprezados}{23}{section.6.3}
+\contentsline {section}{\numberline {6.4}Balan\IeC {\c c}o final}{23}{section.6.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Vis\IeC {\~a}o Geral}}{33}{chapter.7}
-\contentsline {section}{\numberline {7.1}Arquitetura}{33}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Subsistema - Controle e Monitoramento}{33}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Subsistema - Alimenta\IeC {\c c}\IeC {\~a}o}{33}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Subsistema - Estrutura}{33}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Tecnologias utilizadas}{33}{section.7.2}
-\contentsline {section}{\numberline {7.3}Outros}{33}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Integra\IeC {\c c}\IeC {\~a}o Cont\IeC {\'\i }nua}{33}{subsection.7.3.1}
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Vis\IeC {\~a}o Geral}}{24}{chapter.7}
+\contentsline {section}{\numberline {7.1}Subsistema - Controle e Monitoramento}{24}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Tecnologias Utilizadas}{26}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Subsistema - Alimenta\IeC {\c c}\IeC {\~a}o}{26}{section.7.2}
+\contentsline {section}{\numberline {7.3}Subsistema - Estrutura}{26}{section.7.3}
+\contentsline {section}{\numberline {7.4}Outros}{26}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Integra\IeC {\c c}\IeC {\~a}o Cont\IeC {\'\i }nua}{26}{subsection.7.4.1}
 \vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{27}{section*.11}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{35}{section*.12}
+\contentsline {part}{\uppercase {Ap\^endices}}{28}{section*.12}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Ap\IeC {\^e}ndice}}{37}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Ap\IeC {\^e}ndice}}{29}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Segundo Ap\IeC {\^e}ndice}}{39}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Segundo Ap\IeC {\^e}ndice}}{30}{appendix.B}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{41}{section*.13}
+\contentsline {part}{\uppercase {Anexos}}{31}{section*.13}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Anexo}}{43}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Anexo}}{32}{appendix.anexochapback.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Segundo Anexo}}{45}{appendix.anexochapback.2}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Segundo Anexo}}{33}{appendix.anexochapback.2}

@@ -2,34 +2,47 @@
 
 Os requisitos de um projeto são as descrições do que o sistema deve fazer, os
 serviços oferecidos e as restrições a seu funcionamento \cite{sommerville}.
-Além de descrever as necessidades a serem cumpridas, os requisitos também são responsáveis
-por determinar a qualidade que deve ser apresentada \cite{robertson}.
+Além de descrever as necessidades a serem cumpridas, os requisitos também são
+responsáveis por determinar a qualidade que deve ser apresentada \cite{robertson}.
 Baseado nisto, este capítulo tem por objetivo listar os requisitos presentes
 no projeto.
 
 \section{Requisitos Gerais}
 
 \begin{enumerate}
-\item Desenvolver a estrutura da cadeira.
-\item Atender portadores de mobilidade reduzida, especificamente os paraplégicos.
-\item O sistema precisa estar conectado à internet.
+  \item Desenvolver a estrutura da cadeira.
+  \item Atender portadores de mobilidade reduzida, especificamente os paraplégicos.
+  \item O sistema precisa estar conectado à internet.
 \end{enumerate}
 
 \section{Subsistema - Controle e Monitoramento}
 
 \begin{enumerate}[resume*]
-\item O controle de movimentação da cadeira se dará por meio de um \textit{joystick}.
-\item O sistema fará o monitoramento dos seguintes sinais vitais:
-\begin{enumerate}[resume*]
-\item Sinal 1
-\item Sinal 2
-\item Sinal 3
-\end{enumerate}
-\item Possibilidade de notificar algum parente.
-\item Interação com recursos via aplicativo.
-\item O sistema deve ser capaz de notificar algum
-responsável quando um dos módulos essenciais para o funcionamento não estiver
-funcionando corretamente
+  \item O controle de movimentação da cadeira se dará por meio de um \textit{joystick}.
+  \item O sistema fará o monitoramento dos seguintes sinais vitais:
+    \begin{enumerate}[resume*]
+      \item Temperatura
+      \item Frequência cardíaca
+      \item Resistência galvânica da pele
+    \end{enumerate}
+  \item Os meios de captura dos sinais do paciente devem ser não invasivos.
+  \item O sistema deverá ser capaz de tratar sinais extraídos e realizar as
+    conversões necessárias para processamento.
+  \item O sistema deve atualizar os dados no servidor com variações de 5\% do
+    último valor recebido.
+  \item Possibilidade de notificar algum parente.
+  \item Interação com recursos via aplicativo.
+  \item O sistema deverá ser capaz de apresentar o histórico de dados
+    capturados ao usuário.
+  \item O sistema deve ser capaz de reiniciar o processador no caso de erros de
+    captura de sinais, evitando o travamento completo do sistema.
+  \item O sistema mobile deve ser capaz de notificar algum responsável quando
+    um dos módulos essenciais para o funcionamento não estiver funcionando corretamente.
+  \item O sistema deve apresentar um tempo de resposta máximo de 30 segundos
+    até que o evento crítico seja identificado;
+  \item O sistema web deve funcionar nos navegadores chrome e firefox.
+  \item O aplicativo mobile deverá funcionar nas versões 4.4 do Android em diante.
+  \item As ferramentas utilizadas deverão ter suporte para Linux.
 \end{enumerate}
 
 \section{Alimentação}
@@ -37,6 +50,19 @@ funcionando corretamente
 \section{Estrutura}
 
 \begin{enumerate}[resume*]
-\item Estabelecer capacidade máxima de carga.
-\item A estrutura deve atender aos princípios de ergonomia presente na NBR 9050\footnote{\url{http://www.ufpb.br/cia/contents/manuais/abnt-nbr9050-edicao-2015.pdf}}.
+  \item A estrutura da cadeira suportará uma pessoa com peso de até 100kg.
+  \item A cadeira terá que suportar o peso de sua estrutura, conjunto de bateria
+    e motores e usuário.
+  \item O motor deve transmitir torque suficiente para movimentar a cadeira sem
+    problemas até em rampas.
+  \item A estrutura deve atender aos princípios de ergonomia presente na NBR
+    9050\footnote{\url{http://www.ufpb.br/cia/contents/manuais/abnt-nbr9050-edicao-2015.pdf}}.
+  \item A cadeira deverá ter apoio para as mãos de quem tiver que empurrá-la
+    caso o motor não funcione no momento.
+  \item A cadeira deverá ter estabilidade suficiente para que o usuário não se
+    desequilibrar com ela.
+  \item A cadeira deverá possuir mecanismo de frenagem para caso o usuário
+    queira parar em qualquer lugar, seja em uma rampa ou em terreno plano.
+  \item A cadeira deverá ser capaz de se movimentar para frente e para trás
+    podendo realizar curvas durante o percurso.
 \end{enumerate}
