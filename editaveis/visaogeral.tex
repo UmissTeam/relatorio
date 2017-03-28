@@ -3,7 +3,7 @@
 Para embasar e planejar o projeto a ser desenvolvido, uma proposta de
 arquitetura precisa ser feito. Neste capítulo será apresentado tal proposta,
 sendo inicialmente explanado a arquitetura esperada por subsistemas, e, ao fim
-do capítulo, será mostrada arquitetura geral do projeto.
+do capítulo, será mostrada a arquitetura geral do projeto.
 
 \section{Subsistema - Controle e Monitoramento}
 
@@ -37,15 +37,15 @@ Abaixo é possível ver o ciclo-de-vida típico do subsistema.
   \label{fig:arquitetura-monitoramento-e-controle}
 \end{figure}
 
-O passo (i) do subsistema é atuado pelos sensores, que extraírão sinais do paciente;
-o passo (ii) será atuado pelos amplificadores e filtros, e tratarão o sinal
-extraído pelos sensores no passo anterior; no passo (iii) os sinais tratados
+O passo (1) do subsistema é atuado pelos sensores, que extraírão sinais do paciente;
+o passo (2) será atuado pelos amplificadores e filtros, e tratarão o sinal
+extraído pelos sensores no passo anterior; no passo (3) os sinais tratados
 são convertidos para formato digital, para que possam ser lidos pelo sistema
-embarcado; no passo (iv) o sistema embarcado recebe as informações do conversor
+embarcado; no passo (4) o sistema embarcado recebe as informações do conversor
 e abre conexão com o servidor remoto - após, envia as informações recebidas,
-quando necessário; no passo (v) o servidor remoto recebe dados do sistema
+quando necessário; no passo (5) o servidor remoto recebe dados do sistema
 embarcado e passa informações importantes para o aplicativo, e, por fim,
-no passo (vi), o aplicativo recebe as informações.
+no passo (6), o aplicativo recebe as informações.
 
 \subsection{Tecnologias Utilizadas}
 
