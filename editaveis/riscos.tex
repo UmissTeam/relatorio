@@ -1,5 +1,165 @@
 \chapter{Riscos}
+Seja qual for a decisão dentro de um projeto, desde o início com o
+planejamento do projeto até a integração dos sistemas, são presentes os riscos
+com níveis associados, uma vez que o acompanhamento deve ser feito de maneira contínua
+durante todo o processo.
+Os riscos possuem graus de probabilidade e impacto, tais que juntas classificam
+cada risco, como elucidado na Tabela~\ref{tab:probimp} abaixo.
 
-\subsection{Gerais}
+\begin{table}[h]
+\centering
+\vspace{0.5cm}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Probabilidade/Impacto & Leve            & Médio          & Grave \\
+\hline
+Alto                  & Risco elevado   & Risco extremo  & Risco extremo \\
+Médio                 & Risco moderado  & Risco elevado  & Risco extremo \\
+Baixo                 & Risco moderado  & Risco moderado & Risco elevado \\
+\hline
+\end{tabular}
+\caption{Probabilidade/Impacto dos riscos}
+\label{tab:probimp}
+\end{table}
 
-\subsection{Especificos}
+A Tabela~\ref{tab:probimp} é a chamada Matriz de Riscos, que auxilia na avaliação dos riscos
+que são envolvidos na elaboração do projeto em questão. A Matriz de Riscos é
+formada por dois eixos, o vertical sendo a probabilidade de ocorrer determinado risco,
+e o horizontal sendo o eixo de impacto no projeto. De acordo com os principais tópicos
+abordados pelo PMBOK (Project Management Book of Knowledge), é necessário que
+haja o planejamento do gerenciamento no projeto, a identificação dos riscos
+inerentes, realização de análise quantitativa (probabilidade) e análise qualitativa
+(impacto), planejamento de feedback aos riscos e controle.
+
+No que se refere aos riscos do projeto em questão, foram realizados
+\textit{brainstormings} em reuniões da equipe, com o intuito de colocar em evidência os
+possíveis riscos embutidos. De acordo com os dados coletados e análises realizadas,
+foram formuladas as tabelas abaixo.
+
+\begin{table}[h]
+\centering
+\vspace{0.5cm}
+\begin{tabular}{|c|c|c|}
+\hline
+Riscos - Estrutura    & Leve            & Médio          \\
+\hline
+Acidentes causados por imperícia do usuário         & Médio & Leve \\
+Falha estrutural                                    & Baixo & Grave \\
+Falha na transmissão                                & Médio & Grave \\
+Falha na mobilidade da cadeira                      & Médio & Médio \\
+Falha de montagem                                   & Baixo & Médio \\
+Falta de recurso para o cumprimento dos requisitos  & Médio & Médio \\
+\hline
+\end{tabular}
+\caption{Probabilidade/Impacto dos riscos da Estrutura}
+\label{tab:probimpest}
+\end{table}
+
+\begin{table}[h]
+\centering
+\vspace{0.5cm}
+\begin{tabular}{|c|c|c|}
+\hline
+Riscos - Controle e monitoramento       & Probabilidade & Impacto \\
+\hline
+Falha na transmissão de dados           & Baixo         & Grave \\
+Instabilidade de sevidores e serviços   & Baixo         & Médio \\
+Falha de aquisição de dados do usuário  & Médio         & Grave \\
+\hline
+\end{tabular}
+\caption{Probabilidade/Impacto dos riscos de Controle e Monitoramento}
+\label{tab:probimpcontrole}
+\end{table}
+
+\begin{table}[h]
+\centering
+\vspace{0.5cm}
+\begin{tabular}{|c|c|c|}
+\hline
+Riscos - Alimentação        & Probabilidade & Impacto \\
+\hline
+Alta temperatura do motor   & Alto          & Grave \\
+Vida útil da bateria        & Médio         & Médio \\
+Descarregamento da bateria  & Baixo         & Médio \\
+\hline
+\end{tabular}
+\caption{Probabilidade/Impacto dos riscos de Alimentação}
+\label{tab:probimpalim}
+\end{table}
+
+De acordo com as análises obtidas conforme a Tabela~\ref{tab:probimp} de Matriz de Riscos,
+cada risco foi agrupado em uma subárea do projeto, sendo possível identificar uma
+média esperada de probabilidade e impacto de determinados riscos, sendo avaliado o
+grau a classificação definida.
+
+\begin{table}[h]
+\centering
+\vspace{0.5cm}
+\begin{tabular}{|c|c|c|}
+\hline
+Riscos                    & Probabilidade & Impacto \\
+\hline
+Estrutura                 & Médio         & Médio \\
+Controle e monitoramento  & Médio         & Médio \\
+Alimentação               & Médio         & Médio \\
+\hline
+\end{tabular}
+\caption{Probabilidade/Impacto dos riscos de cada subárea}
+\label{tab:probimparea}
+\end{table}
+
+Com os dados coletados, é necessária a elaboração do plano de ação com o
+intuito de mitigar ou extinguir a ocorrência de algum risco analisado. Dessa forma, de
+acordo com as tabelas a seguir, são desenvolvidas e listadas as propostas de soluções
+para cada caso.
+
+\begin{table}[h]
+\centering
+\vspace{0.5cm}
+\begin{tabular}{|c|c|}
+\hline
+Riscos - Estrutura                                     & Solução \\
+\hline
+Acidentes causados por imperícia do usuário            & \\
+Falha estrutural                                       & \\
+Falha na transmissão                                   & \\
+Falha na mobilidade da cadeira                         & \\
+Falha de montagem                                      & \\
+Falta de recurso para o cumprimento dos requisitos     & \\
+\hline
+\end{tabular}
+\caption{Soluções dos riscos da área de Estrutura}
+\label{tab:riscosubareaest}
+\end{table}
+
+\begin{table}[h]
+\centering
+\vspace{0.5cm}
+\begin{tabular}{|c|c|}
+\hline
+Riscos - Controle e monitoramento         & Soluções \\
+\hline
+Falha na transmissão de dados             & \\ 
+Instabilidade de servidores e serviços    & \\ 
+Falha de aquisição de dados do usuário    & \\
+\hline
+\end{tabular}
+\caption{Soluções dos riscos da área de Controle e monitoramento}
+\label{tab:riscosubareacont}
+\end{table}
+
+\begin{table}[h]
+\centering
+\vspace{0.5cm}
+\begin{tabular}{|c|c|}
+\hline
+Riscos - Alimentação & Soluções \\
+\hline
+Alta temperatura do motor     & \\ 
+Vida útil da bateria          & \\ 
+Descarregamento da bateria    & \\
+\hline
+\end{tabular}
+\caption{Soluções dos riscos da área de Alimentação}
+\label{tab:riscosubareaalim}
+\end{table}
