@@ -5,9 +5,9 @@ arquitetura precisa ser feito. Neste capítulo será apresentado tal proposta,
 sendo inicialmente explanado a arquitetura esperada por subsistemas, e, ao fim
 do capítulo, será mostrada a arquitetura geral do projeto.
 
-\section{Subsistema - Controle e Monitoramento}
+\section{Subsistema - Processamento de Sinais e Monitoramento}
 
-O subsistema de controle e monitoramento pode ser dividido em três grandes
+O subsistema de processamento de sinais e monitoramento pode ser dividido em três grandes
 componentes: a parte eletrônica da cadeira-de-rodas, um servidor remoto e um
 aplicativo que será usado pelos responsáveis de um dado paciente.
 
@@ -33,7 +33,7 @@ Abaixo é possível ver o ciclo-de-vida típico do subsistema.
 \begin{figure}[H]
   \centering
     \includegraphics[width=\textwidth]{figuras/arquitetura-monitoramentoecontrole.eps}
-  \caption{Fluxo típico do subsistema de Monitoramento e Controle}
+  \caption{Fluxo típico do subsistema de Processamento de Sinais e Monitoramento}
   \label{fig:arquitetura-monitoramento-e-controle}
 \end{figure}
 
@@ -100,7 +100,7 @@ conversores A/D (analógico-digital), com isso, torna-se necessário o acoplamen
 
 \begin{figure}[H]
   \centering
-    \includegraphics[width=\textwidth]{figuras/rasp.eps}
+    \includegraphics[keepaspectratio=true,scale=0.6]{figuras/rasp.eps}
   \caption{Microcomputador Raspberry Pi 3 Modelo B.}
   \label{fig:rasp}
 \end{figure}
@@ -113,12 +113,10 @@ conexão I2C com a Raspberry Pi, diminuindo a quantidade de portas utilizadas no
 
 \begin{figure}[H]
   \centering
-    \includegraphics[width=\textwidth]{figuras/ads.eps}
+    \includegraphics[keepaspectratio=true,scale=0.7]{figuras/ads.eps}
   \caption{Microcomputador Raspberry Pi 3 Modelo B.}
   \label{fig:ads}
 \end{figure}
-
-
 
 Será implementado, além, um botão de alerta na cadeira de rodas para o envio de alertas 
 para os familiares do usuário e um algoritmo programado em linguagem Python para 
@@ -128,9 +126,9 @@ detectar picos nos sinais capturados para o envio de dados para o servidor remot
 
 \subsection{Tecnologias Utilizadas}
 
-\section{Subsistema - Alimentação}
+\section{Subsistema - Controle e Alimentação}
 
-\section{Subsistema - Estrutura}
+\section{Subsistema - Projeto Estrutural}
 
 \section{Outros}
 
