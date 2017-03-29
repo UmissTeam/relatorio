@@ -82,13 +82,21 @@ ressaltar que todos os filtros deverão ser projetados e implementados de forma
   \label{fig:sk}
 \end{figure}
 
-Para a incorporação desses filtros, serão utilizados amplificadores operacionais TL084 da fabricante \textit{Texas Instruments}. Além do processamento e filtragem dos sinais, é necessária uma pré-amplificação que será realizada por amplificadores de instrumentações INA118 e INA128, que são amplificadores específicos para instrumentação e captura de sinais, fabricados pela \textit{Texas Instruments}.
+Para a incorporação desses filtros, serão utilizados amplificadores operacionais 
+TL084 da fabricante \textit{Texas Instruments}. Além do processamento e filtragem 
+dos sinais, é necessária uma pré-amplificação que será realizada por amplificadores 
+de instrumentações INA118 e INA128, que são amplificadores específicos 
+para instrumentação e captura de sinais, fabricados pela \textit{Texas Instruments}.
 
 Importante o ressalte de que todos os sensores e condicionadores utilizados
 entregam um sinal analógico, o qual não pode ser processado diretamente
 pelo microprocessador selecionado.
 
-A placa de desenvolivmento Raspberry Pi 3 possui processador de 64-bit Quad-Core ARMv8 de 1.2GHz, 1GB de memória RAM e conexões WiFi e Bluetooth, porém, não possui entradas para conversores A/D (analógico-digital), com isso, torna-se necessário o acoplamento de um conversor externo. Para os fins da aplicação proposta no projeto, foi selecionado o conversor ADS1115 que possui 16 bits de resolução e amostragem de 800Hz, suficiente para fazer análise de sinais de frequência cardíaca, temperatura e GSR, além disso, possui quatro canais de entrada analógica e conexão I2C com a Raspberry Pi, diminuindo a quantidade de portas utilizadas no processador. 
+A placa de desenvolivmento Raspberry Pi 3, apresentada na Figura \ref{fig:rasp}, 
+possui processador de 64-bit Quad-Core ARMv8 de 1.2GHz, 1GB de memória RAM e 
+conexões WiFi e Bluetooth, porém, não possui 
+entradas para 
+conversores A/D (analógico-digital), com isso, torna-se necessário o acoplamento de um conversor externo.
 
 \begin{figure}[H]
   \centering
@@ -97,7 +105,24 @@ A placa de desenvolivmento Raspberry Pi 3 possui processador de 64-bit Quad-Core
   \label{fig:rasp}
 \end{figure}
 
-Será implementado, além, um botão de alerta na cadeira de rodas para o envio de alertas para os familiares do usuário e um algoritmo para detectar picos nos sinais capturados para o envio de dados para o servidor remoto.
+Para os fins da aplicação proposta no projeto, foi selecionado o conversor 
+ADS1115, mostrado na Figura \ref{ads} que possui 16 bits de resolução e amostragem 
+de 800Hz, suficiente para fazer análise de sinais de frequência cardíaca, 
+temperatura e GSR, além disso, possui quatro canais de entrada analógica e 
+conexão I2C com a Raspberry Pi, diminuindo a quantidade de portas utilizadas no processador. 
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=\textwidth]{figuras/ads.eps}
+  \caption{Microcomputador Raspberry Pi 3 Modelo B.}
+  \label{fig:ads}
+\end{figure}
+
+
+
+Será implementado, além, um botão de alerta na cadeira de rodas para o envio de alertas 
+para os familiares do usuário e um algoritmo programado em linguagem Python para 
+detectar picos nos sinais capturados para o envio de dados para o servidor remoto.
 
 
 
