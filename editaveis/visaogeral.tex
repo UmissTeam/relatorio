@@ -25,13 +25,13 @@ paciente, e serão acoplados a estrutura da cadeira, de forma que algum
 membro do paciente fique em contato com o sensor, permitindo assim a
 aquisição do sinal.
 
-Os amplificadores e filtros serão responsáveis pelo tratamento do sinal;
-amplificadores tendo o papel de aumentar o ganho extraído pelo sinal,
-e os filtros tendo o papel de atenuar ruídos capturados.
+Os amplificadores e filtros serão responsáveis pelo condicionamento do sinal. 
+Os sinais adquiridos serão amplificados, por tratarem-se de sinais de baixa 
+amplitude, e filtrados para atenuação de ruídos de frequências indesejadas.
 
-Os conversores terão como papel a conversão dos sinais tratados para um formato
-que o sistema embarcado possa entender; no caso do projeto UMISS, a conversão
-a ser feita será de analógica para digital.
+Os conversores DAC (\textit{Digital Analog Converter}) terão como papel a conversão 
+dos sinais analógicos adquiridos do usuário para formato digital, para que os 
+mesmo possam ser processados pelo processador central do sistema.
 
 Um sistema embarcado será responsável por receber os sinais do paciente,
 processá-los e utilizá-los em tarefas específicas, e, por fim, despachar os
@@ -96,6 +96,76 @@ clientes para se comunicarem, chamado de DjangoRestFramework. Este é muito pode
 e de alta produtividade.
 
 Estas três ferramentas irão compor juntas o passo (5).
+
+\subsubsection{Sistema Embarcado}
+Um sistema central de processamento foi selecionado para compor o passo (4).
+A placa de desenvolvimento Raspberry Pi 3 Model B, apresentada na Figura \ref{rasp} foi selecionada para
+a execução do processamento dos dados adiquiridos por possuir, além de alta 
+velocidade de processamento, conexão WiFi, o que possibilita a comunicação 
+com o servidor remoto, de acordo com os requisitos do projeto.
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[keepaspectratio=true,scale=0.6]{figuras/rasp.eps}
+  \caption{Microcomputador Raspberry Pi 3 Modelo B.}
+  \label{fig:rasp}
+\end{figure}
+
+\subsubsection{Conversor AD}
+Para a conversão dos sinais analógicos para digitais, foi selecionado o conversor 
+AD ADS1115, apresentado na Figura \ref{ads}, que possui quatro canais de entrada analógica, resolução de 16 bits 
+e amostragem de 800Hz. 
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[keepaspectratio=true,scale=0.7]{figuras/ads.eps}
+  \caption{Conversor analógico-digital ADS1115.}
+  \label{fig:ads}
+\end{figure}
+
+Preocupações de importante ressalte durante a seleção do 
+conversor 
+foram sua resolução e amostragem. O conversor ADS1115 possui alta 
+resolução com 
+seus 16 bits, possibilitando uma captura mais refinada dos sinais 
+de pequena 
+variação. Além disso, possui amostragem de 800Hz, necessária 
+para captura 
+de sinais de eletrocardiograma (ECG) e frequência cardíaca, 
+que possuem 
+frequências úteis até 300Hz, dessa forma, 800Hz de amostragem 
+mostra-se 
+suficente para boa captura desses sinais, entre os outros necessários para o projeto.
+
+\subsubsection{Amplificadores de Intrumentação e Operacionais}
+Para os sistemas de amplificação dos sinais capturados e condicionamento dos mesmos, serão utilizados amplificadores operacionais e de intrumentação.
+
+A amplificação e captura de sinais vitais de baixa amplitude de forma ótima é 
+uma tarefa que requer um amplificador de instrumentação, com ganho regulável 
+por divisores de tensão, permitem aplicação de alto ganho sem aplicar novos 
+ruídos ao sinal. Para a amplificação dos sinais para frequência cardíaca 
+serão utilizados amplificadores INA118 e INA128, fabricados pela \textit{Texas Instruments}. Além, para a filtragem dos sinais, serão implemetadas 
+topologias de filtragem analógica do tipo \textit{Sallen-Key}, que necessitam da 
+utilização de amplificadores operacionais para seleção das frequências 
+de corte desejadas, para estes, serão utilizados amplificadores TL084, 
+da \textit{Texas Instruments}, por maior concentração de amplificadores 
+por chip e pelo baixo ruído apresentado por estes amplificadores.
+
+\subsubsection{Aquisição de Sinais}
+Para a aquisição dos sinais do usuário, serão utilizados sensores e eletrodos específicos para cada tipo de sinal. Para a captura dos sinais de resistência galvânica da pele (GSR), pela qual é possível identificar alterações de estresse do usuário e prováveis convulsões ou crises hipoglicêmicas, serão utilizados eletrodos com contatos de prata ou alumínio, em contato com os dedos ou pulso do usuário.
+
+Para a aquisição dos sinais de temperatura corporal, serão utilizados termistores, que consistem em resistores que apresentam variação de resistência para variações de temperaturas, regidas pela equação de \textit{Steinhart-Hart} \cite{gregg}, para esses termistores, haverão, no sistema embarcado, rotinas para definir a temperatura corporal a partir de valores de tensão recebidos.
+
+Além, para captura de sinais de frequência cardíaca, serão utilizados sensores ópticos ou eletrodos de contato para captura dos sinais de eletrocardiograma (ECG).
+
+Na Figura \ref{sensors} é possível visualizar modelos comuns dos sensores e eletrodos utilizados.
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=\textwidth]{figuras/sensors.eps}
+  \caption{Sensores e eletrodos para captura de sinais: Termistor NTC 10K para temperatura, oximetro de dedo para frequência cardíaca e contatos de prata para captura de GSR.}
+  \label{fig:sensors}
+\end{figure}
 
 \section{Subsistema - Controle e Alimentação}
 
