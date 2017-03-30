@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.14)  30 MAR 2017 10:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.14)  30 MAR 2017 11:29
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **tcc.tex
 (./tcc.tex
@@ -1238,7 +1237,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 84.
+(Font)              <14.4> on input line 87.
  [11]) [12])
 (./editaveis/introducao.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--10
@@ -1279,7 +1278,7 @@ Package epstopdf Info: Source file: <figuras/fishbone.eps>
 rted-to.pdf figuras/fishbone.eps>
 (epstopdf)             \includegraphics on input line 57.
 Package epstopdf Info: Output file is already uptodate.
- <figuras/fishbone-eps-converted-to.pdf, id=279, 722.7pt x 542.025pt>
+ <figuras/fishbone-eps-converted-to.pdf, id=295, 722.7pt x 542.025pt>
 File: figuras/fishbone-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/fishbone-eps-converted-to.pdf>
@@ -1301,7 +1300,7 @@ Package epstopdf Info: Source file: <figuras/ldrive.eps>
 ed-to.pdf figuras/ldrive.eps>
 (epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
-<figuras/ldrive-eps-converted-to.pdf, id=281, 549.05125pt x 211.79124pt>
+<figuras/ldrive-eps-converted-to.pdf, id=297, 549.05125pt x 211.79124pt>
 File: figuras/ldrive-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/ldrive-eps-converted-to.pdf>
@@ -1369,7 +1368,7 @@ ted-to.pdf figuras/flux_rh.eps>
 (epstopdf)             \includegraphics on input line 80.
 Package epstopdf Info: Output file is already uptodate.
 
-<figuras/flux_rh-eps-converted-to.pdf, id=332, 2509.375pt x 928.46875pt>
+<figuras/flux_rh-eps-converted-to.pdf, id=348, 2509.375pt x 928.46875pt>
 File: figuras/flux_rh-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/flux_rh-eps-converted-to.pdf>
@@ -1390,7 +1389,7 @@ Package epstopdf Info: Source file: <figuras/fluxo1.eps>
 ed-to.pdf figuras/fluxo1.eps>
 (epstopdf)             \includegraphics on input line 135.
 Package epstopdf Info: Output file is already uptodate.
-<figuras/fluxo1-eps-converted-to.pdf, id=335, 412.54124pt x 156.585pt>
+<figuras/fluxo1-eps-converted-to.pdf, id=351, 412.54124pt x 156.585pt>
 File: figuras/fluxo1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/fluxo1-eps-converted-to.pdf>
@@ -1444,6 +1443,20 @@ l.94
                                                   \fi \fi 
 l.94 
      ]
+Overfull \hbox (34.05792pt too wide) in paragraph at lines 119--130
+ [][] 
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 143--144
+\T1/lmr/m/n/12 da-dos e re-po-si-ci-o-na-mento dos
+ []
+
+
+Overfull \hbox (2.67163pt too wide) in paragraph at lines 137--146
+ [][] 
+ []
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1505,7 +1518,7 @@ e.eps>
 (epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
 
-<figuras/arquitetura-monitoramentoecontrole-eps-converted-to.pdf, id=448, 532.9
+<figuras/arquitetura-monitoramentoecontrole-eps-converted-to.pdf, id=464, 532.9
 9126pt x 417.56pt>
 File: figuras/arquitetura-monitoramentoecontrole-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1520,41 +1533,101 @@ ed-to.pdf used on input line 65.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.79 
-      <./figuras/arquitetura-monitoramentoecontrole-eps-converted-to.pdf>])
-(./tcc.bbl (./tcc.brf)
+      <./figuras/arquitetura-monitoramentoecontrole-eps-converted-to.pdf>]
+[35]
+Package epstopdf Info: Source file: <figuras/rotor.eps>
+(epstopdf)                    date: 2017-03-30 11:00:23
+(epstopdf)                    size: 66352 bytes
+(epstopdf)             Output file: <figuras/rotor-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-03-30 11:03:22
+(epstopdf)                    size: 42018 bytes
+(epstopdf)             Command: <repstopdf --outfile=figuras/rotor-eps-converte
+d-to.pdf figuras/rotor.eps>
+(epstopdf)             \includegraphics on input line 118.
+Package epstopdf Info: Output file is already uptodate.
+ <figuras/rotor-eps-converted-to.pdf, id=480, 555.07375pt x 254.9525pt>
+File: figuras/rotor-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figuras/rotor-eps-converted-to.pdf>
+Package pdftex.def Info: figuras/rotor-eps-converted-to.pdf used on input line 
+118.
+(pdftex.def)             Requested size: 455.0pt x 208.98846pt.
+ [36pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.152 A
+        potência requerida é calculada multiplicando-se o torque pela velo...
+ <./figuras/rotor-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figuras/motor.eps>
+(epstopdf)                    date: 2017-03-30 11:13:04
+(epstopdf)                    size: 69595 bytes
+(epstopdf)             Output file: <figuras/motor-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-03-30 11:13:36
+(epstopdf)                    size: 31922 bytes
+(epstopdf)             Command: <repstopdf --outfile=figuras/motor-eps-converte
+d-to.pdf figuras/motor.eps>
+(epstopdf)             \includegraphics on input line 165.
+Package epstopdf Info: Output file is already uptodate.
+
+<figuras/motor-eps-converted-to.pdf, id=495, 429.605pt x 358.33875pt>
+File: figuras/motor-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figuras/motor-eps-converted-to.pdf>
+Package pdftex.def Info: figuras/motor-eps-converted-to.pdf used on input line 
+165.
+(pdftex.def)             Requested size: 455.0pt x 379.5256pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[37pdfTeX warning (ext4): destination with the same identifier (name{figure.7.7
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.197 
+       <./figuras/motor-eps-converted-to.pdf>]) (./tcc.bbl (./tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [35]
+ [38pdfTeX warning (ext4): destination with the same identifier (name{table.7.1
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.3 ...th{\labelsep}{0pt}\begin{thebibliography}{}
+                                                  ] [39]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-) (./editaveis/apendices.tex [36
+) (./editaveis/apendices.tex [40
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[37
+[41
 
 
 ]
 Package epstopdf Info: Source file: <figuras/cronogramapc1.eps>
-(epstopdf)                    date: 2017-03-30 09:55:38
+(epstopdf)                    date: 2017-03-30 10:32:44
 (epstopdf)                    size: 9770131 bytes
 (epstopdf)             Output file: <figuras/cronogramapc1-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2017-03-30 09:58:36
+(epstopdf)                    date: 2017-03-30 10:38:17
 (epstopdf)                    size: 208146 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/cronogramapc1-eps-
 converted-to.pdf figuras/cronogramapc1.eps>
 (epstopdf)             \includegraphics on input line 10.
 Package epstopdf Info: Output file is already uptodate.
 
-<figuras/cronogramapc1-eps-converted-to.pdf, id=475, 593.21625pt x 748.7975pt>
+<figuras/cronogramapc1-eps-converted-to.pdf, id=541, 593.21625pt x 748.7975pt>
 File: figuras/cronogramapc1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/cronogramapc1-eps-converted-to.pdf>
@@ -1562,18 +1635,18 @@ Package pdftex.def Info: figuras/cronogramapc1-eps-converted-to.pdf used on inp
 ut line 10.
 (pdftex.def)             Requested size: 455.0pt x 574.34784pt.
 Package epstopdf Info: Source file: <figuras/cronogramapc2.eps>
-(epstopdf)                    date: 2017-03-30 09:55:38
+(epstopdf)                    date: 2017-03-30 10:32:44
 (epstopdf)                    size: 7225623 bytes
 (epstopdf)             Output file: <figuras/cronogramapc2-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2017-03-30 09:58:39
+(epstopdf)                    date: 2017-03-30 10:38:21
 (epstopdf)                    size: 159103 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/cronogramapc2-eps-
 converted-to.pdf figuras/cronogramapc2.eps>
 (epstopdf)             \includegraphics on input line 17.
 Package epstopdf Info: Output file is already uptodate.
 
-<figuras/cronogramapc2-eps-converted-to.pdf, id=476, 592.2125pt x 554.07pt>
+<figuras/cronogramapc2-eps-converted-to.pdf, id=542, 592.2125pt x 554.07pt>
 File: figuras/cronogramapc2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/cronogramapc2-eps-converted-to.pdf>
@@ -1581,62 +1654,62 @@ Package pdftex.def Info: figuras/cronogramapc2-eps-converted-to.pdf used on inp
 ut line 17.
 (pdftex.def)             Requested size: 455.0pt x 425.70523pt.
 Package epstopdf Info: Source file: <figuras/cronogramapc3.eps>
-(epstopdf)                    date: 2017-03-30 09:55:38
+(epstopdf)                    date: 2017-03-30 10:32:44
 (epstopdf)                    size: 3759963 bytes
 (epstopdf)             Output file: <figuras/cronogramapc3-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2017-03-30 09:58:41
+(epstopdf)                    date: 2017-03-30 10:38:22
 (epstopdf)                    size: 82329 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/cronogramapc3-eps-
 converted-to.pdf figuras/cronogramapc3.eps>
 (epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
 
-<figuras/cronogramapc3-eps-converted-to.pdf, id=477, 590.205pt x 289.08pt>
+<figuras/cronogramapc3-eps-converted-to.pdf, id=543, 590.205pt x 289.08pt>
 File: figuras/cronogramapc3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/cronogramapc3-eps-converted-to.pdf>
 Package pdftex.def Info: figuras/cronogramapc3-eps-converted-to.pdf used on inp
 ut line 24.
 (pdftex.def)             Requested size: 455.0pt x 222.86134pt.
- [38
+ [42
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.A.6}) 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.A.8}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.29 \chapter
              {Segundo Apêndice} <./figuras/cronogramapc1-eps-converted-to.pdf>
-] [39pdfTeX warning (ext4): destination with the same identifier (name{figure.A
-.7}) has been already used, duplicate ignored
+] [43pdfTeX warning (ext4): destination with the same identifier (name{figure.A
+.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.29 \chapter
              {Segundo Apêndice} <./figuras/cronogramapc2-eps-converted-to.pdf>
-] [40pdfTeX warning (ext4): destination with the same identifier (name{figure.A
-.8}) has been already used, duplicate ignored
+] [44pdfTeX warning (ext4): destination with the same identifier (name{figure.A
+.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.29 \chapter
              {Segundo Apêndice} <./figuras/cronogramapc3-eps-converted-to.pdf>
-]) (./editaveis/anexos.tex [41
+]) (./editaveis/anexos.tex [45
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[42
+[46
 
 
-] [43
+] [47
 
 ]) (./tcc.ind) 
 AED: lastpage setting LastPage
-[44
+[48
 
 ]
 \tf@lof=\write6
@@ -1654,7 +1727,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: D1509A14D3317F70223E9E1FA96814DF;132.
+(rerunfilecheck)             Checksum: D75DDDD2AFE7FC13F1E9B210D3A7A782;356.
 
 
 LaTeX Warning: There were undefined references.
@@ -1665,29 +1738,30 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 12967 strings out of 493013
- 187151 string characters out of 6139316
- 313298 words of memory out of 5000000
- 15971 multiletter control sequences out of 15000+600000
+ 13026 strings out of 493013
+ 188029 string characters out of 6139316
+ 315168 words of memory out of 5000000
+ 16015 multiletter control sequences out of 15000+600000
  84903 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,38p,715b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fo
-nts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mat
-hit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf-d
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dis
+t/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mat
+hsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf-d
 ist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/
-lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1
-/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr
-/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts
-/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10
-.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-
-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public
-/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (45 pages, 1252962 bytes).
+lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1
+/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></us
+r/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/
+type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.
+pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/
+lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on tcc.pdf (49 pages, 1343400 bytes).
 PDF statistics:
- 1098 PDF objects out of 1200 (max. 8388607)
- 757 compressed objects within 8 object streams
- 196 named destinations out of 1000 (max. 500000)
- 698 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1179 PDF objects out of 1200 (max. 8388607)
+ 824 compressed objects within 9 object streams
+ 209 named destinations out of 1000 (max. 500000)
+ 732 words of extra memory for PDF output out of 10000 (max. 10000000)
 
