@@ -120,12 +120,11 @@ para cada caso.
 \hline
 Riscos - Projeto Estrutural                                     & Solução \\
 \hline
-Acidentes causados por imperícia do usuário            & \\
-Falha estrutural                                       & \\
-Falha na transmissão                                   & \\
-Falha na mobilidade da cadeira                         & \\
-Falha de montagem                                      & \\
-Falta de recurso para o cumprimento dos requisitos     & \\
+Acidentes causados por imperícia do usuário            & Fazer um manual do produto \\
+Falha estrutural                                       & Fator de segurança adequado ao sistema \\
+Falha na transmissão                                   & Validação teórica e experimental do sistema \\
+Falha na mobilidade da cadeira                         & Validação do rolamento e boa lubrificação do sistema \\
+Falha de montagem                                      & Metodologia de montagem bem definida \\
 \hline
 \end{tabular}
 \caption{Soluções dos riscos da área de Projeto Estrutural}
@@ -139,9 +138,9 @@ Falta de recurso para o cumprimento dos requisitos     & \\
 \hline
 Riscos - Processamento de Sinais e Monitoramento         & Soluções \\
 \hline
-Falha na transmissão de dados             & \\ 
-Instabilidade de servidores e serviços    & \\ 
-Falha de aquisição de dados do usuário    & \\
+Falha na transmissão de dados             & Redundância de transmissão de dados \\ 
+Instabilidade de servidores e serviços    & Retorno para o usuário do estado do servidor \\ 
+Falha de aquisição de dados do usuário    & Redundância de transmissão de dados e reposicionamento dos sensores \\
 \hline
 \end{tabular}
 \caption{Soluções dos riscos da área de Processamento de Sinais e Monitoramento}
@@ -155,11 +154,15 @@ Falha de aquisição de dados do usuário    & \\
 \hline
 Riscos - Controle e Alimentação & Soluções \\
 \hline
-Alta temperatura do motor     & \\ 
-Vida útil da bateria          & \\ 
-Descarregamento da bateria    & \\
+Alta temperatura do motor     & Desligamento do sistema até o reestabelecimento da temperatura adequada \\ 
+Vida útil da bateria          & Coeficiente de profundidade de descarga da bateria \\ 
+Descarregamento da bateria    & Cumprir o requisito de tempo de uso \\
+Queima de componentes         & Dimensionamento correto dos componentes com margem de segurança \\
 \hline
 \end{tabular}
 \caption{Soluções dos riscos da área de Controle e Alimentação}
 \label{tab:riscosubareaalim}
 \end{table}
+
+As soluções foram elaboradas de modo a encontrar maneiras de contornar os riscos
+evidenciados em cada subsistema durante e a realização do projeto.
