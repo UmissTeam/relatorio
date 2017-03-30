@@ -49,6 +49,24 @@ no passo (6), o aplicativo recebe as informações.
 
 \subsection{Tecnologias Utilizadas}
 
+\subsubsection{Servidor Django}
+\label{sub:servidor_django}
+O passo (5), retratado na Figura \ref{fig:arquitetura-monitoramento-e-controle},
+representa o servidor remoto, que irá receber as informações de todas as
+estações embarcadas do sistema. Este será responsável por receber, processar
+e se comunicar com os dispositivos móveis cadastrados no sistema. Para tal,
+será utilizado uma linguagem de programação compatível com a que será utilizada
+no software embarcado, que será escrito em python. Desta maneira, todo
+o servidor proverá serviços utilizando python.
+
+Um Framework robusto e já bastante consolidado na comunidade python é o Django.
+Este é bem completo e possui várias ferramentas que auxiliam no desenvolvimento.
+O django possui um framework para API's Rest, que será o padrão utilizado pelos
+clientes para se comunicarem, chamado de DjangoRestFramework. Este é muito poderoso
+e de alta produtividade.
+
+Estas três ferramentas irão compor juntas o passo (5).
+
 \section{Subsistema - Alimentação}
 
 \section{Subsistema - Estrutura}
