@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.14)  28 MAR 2017 10:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.12.14)  28 MAR 2017 21:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1230,18 +1230,37 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 67.
+(Font)              <14.4> on input line 65.
 ) [11])
 (./editaveis/introducao.tex
-Underfull \hbox (badness 10000) in paragraph at lines 7--18
+Underfull \hbox (badness 10000) in paragraph at lines 3--10
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--30
+Underfull \hbox (badness 10000) in paragraph at lines 11--17
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--50
+
+ []
+
+[12
+
+
+]
 Package epstopdf Info: Source file: <figuras/fishbone.eps>
 (epstopdf)                    date: 2017-03-28 10:36:06
 (epstopdf)                    size: 73781 bytes
@@ -1250,21 +1269,17 @@ Package epstopdf Info: Source file: <figuras/fishbone.eps>
 (epstopdf)                    size: 80115 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/fishbone-eps-conve
 rted-to.pdf figuras/fishbone.eps>
-(epstopdf)             \includegraphics on input line 37.
+(epstopdf)             \includegraphics on input line 57.
 Package epstopdf Info: Output file is already uptodate.
-<figuras/fishbone-eps-converted-to.pdf, id=208, 722.7pt x 542.025pt>
+ <figuras/fishbone-eps-converted-to.pdf, id=223, 722.7pt x 542.025pt>
 File: figuras/fishbone-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/fishbone-eps-converted-to.pdf>
 Package pdftex.def Info: figuras/fishbone-eps-converted-to.pdf used on input li
-ne 37.
+ne 57.
 (pdftex.def)             Requested size: 361.3491pt x 271.01183pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--51
+Underfull \hbox (badness 10000) in paragraph at lines 64--71
 
  []
 
@@ -1276,20 +1291,21 @@ Package epstopdf Info: Source file: <figuras/ldrive.eps>
 (epstopdf)                    size: 47361 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/ldrive-eps-convert
 ed-to.pdf figuras/ldrive.eps>
-(epstopdf)             \includegraphics on input line 58.
+(epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
-<figuras/ldrive-eps-converted-to.pdf, id=210, 549.05125pt x 211.79124pt>
+<figuras/ldrive-eps-converted-to.pdf, id=225, 549.05125pt x 211.79124pt>
 File: figuras/ldrive-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/ldrive-eps-converted-to.pdf>
 Package pdftex.def Info: figuras/ldrive-eps-converted-to.pdf used on input line
- 58.
+ 78.
 (pdftex.def)             Requested size: 384.33325pt x 148.25285pt.
- [12
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 62--68
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--88
 
  []
 
@@ -1298,25 +1314,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--68
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.73 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-.2}) has been already used, duplicate ignored
+l.88 
+      <./figuras/fishbone-eps-converted-to.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 107.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.73 
-      <./figuras/fishbone-eps-converted-to.pdf> <./figuras/ldrive-eps-converted
--to.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 87.
- (/usr/share/texmf-dist/tex/latex/lm/omslmr.fd
+
+(/usr/share/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 87.
-)
-(./editaveis/metodologia.tex [14] [15
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 107.
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+2}) has been already used, duplicate ignored
 
-] [16]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.110 \item D
+             esenvolver plataforma para apresentação de dados e alertas; <./f
+iguras/ldrive-eps-converted-to.pdf>]) (./editaveis/metodologia.tex [15]
+[16
+
+]
+Package epstopdf Info: Source file: <figuras/flux_rh.eps>
+(epstopdf)                    date: 2017-03-28 21:03:23
+(epstopdf)                    size: 14058750 bytes
+(epstopdf)             Output file: <figuras/flux_rh-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-03-28 21:09:01
+(epstopdf)                    size: 177522 bytes
+(epstopdf)             Command: <repstopdf --outfile=figuras/flux_rh-eps-conver
+ted-to.pdf figuras/flux_rh.eps>
+(epstopdf)             \includegraphics on input line 71.
+Package epstopdf Info: Output file is already uptodate.
+ <figuras/flux_rh-eps-converted-to.pdf, id=250, 2509.375pt x 928.46875pt>
+File: figuras/flux_rh-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figuras/flux_rh-eps-converted-to.pdf>
+Package pdftex.def Info: figuras/flux_rh-eps-converted-to.pdf used on input lin
+e 71.
+(pdftex.def)             Requested size: 451.66801pt x 167.11716pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17]
 Package epstopdf Info: Source file: <figuras/fluxo1.eps>
 (epstopdf)                    date: 2017-03-28 10:36:06
 (epstopdf)                    size: 11867 bytes
@@ -1325,32 +1365,100 @@ Package epstopdf Info: Source file: <figuras/fluxo1.eps>
 (epstopdf)                    size: 5686 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/fluxo1-eps-convert
 ed-to.pdf figuras/fluxo1.eps>
-(epstopdf)             \includegraphics on input line 86.
+(epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
-
-<figuras/fluxo1-eps-converted-to.pdf, id=241, 412.54124pt x 156.585pt>
+ <figuras/fluxo1-eps-converted-to.pdf, id=257, 412.54124pt x 156.585pt>
 File: figuras/fluxo1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figuras/fluxo1-eps-converted-to.pdf>
 Package pdftex.def Info: figuras/fluxo1-eps-converted-to.pdf used on input line
- 86.
+ 95.
 (pdftex.def)             Requested size: 455.0pt x 172.70276pt.
- [17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.106   \item R
-               elata na \textit{issue} associada se algum problema ocorreu, ...
- <./figuras/fluxo1-eps-converted-to.pdf>]) (./editaveis/tempo.tex [18])
-(./editaveis/requisitos.tex [19
+l.102   \item O
+                conteúdo é revisado pelo seu autor, que corrigirá defeito...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) 
+has been already used, duplicate ignored
 
-] [20
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.102   \item O
+                conteúdo é revisado pelo seu autor, que corrigirá defeito...
+ <./figuras/flux_rh-eps-converted-to.pdf> <./figuras/fluxo1-eps-converted-to.pd
+f>]) (./editaveis/tempo.tex [19]) (./editaveis/requisitos.tex [20
 
-]) (./editaveis/riscos.tex [21])
-(./editaveis/custos.tex [22
+] [21
 
-]) (./editaveis/visaogeral.tex [23
+])
+(./editaveis/riscos.tex [22]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.94 
+     pdfTeX warning (ext4): destination with the same identifier (name{table.5.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.94 
+     ]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./editaveis/custos.tex [24pdfTeX warning (ext4): destination with the same i
+dentifier (name{table.5.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \chapter
+            {Custos}pdfTeX warning (ext4): destination with the same identifier
+ (name{table.5.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \chapter
+            {Custos}pdfTeX warning (ext4): destination with the same identifier
+ (name{table.5.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \chapter
+            {Custos}pdfTeX warning (ext4): destination with the same identifier
+ (name{table.5.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \chapter
+            {Custos}] [25pdfTeX warning (ext4): destination with the same ident
+ifier (name{table.5.7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \chapter
+            {Custos}pdfTeX warning (ext4): destination with the same identifier
+ (name{table.5.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \chapter
+            {Custos}]) (./editaveis/visaogeral.tex [26
 
 ]
 Package epstopdf Info: Source file: <figuras/arquitetura-monitoramentoecontrole
@@ -1367,7 +1475,7 @@ e.eps>
 (epstopdf)             \includegraphics on input line 35.
 Package epstopdf Info: Output file is already uptodate.
 
-<figuras/arquitetura-monitoramentoecontrole-eps-converted-to.pdf, id=331, 532.9
+<figuras/arquitetura-monitoramentoecontrole-eps-converted-to.pdf, id=364, 532.9
 9126pt x 417.56pt>
 File: figuras/arquitetura-monitoramentoecontrole-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1376,39 +1484,27 @@ ile (type pdf)
 Package pdftex.def Info: figuras/arquitetura-monitoramentoecontrole-eps-convert
 ed-to.pdf used on input line 35.
 (pdftex.def)             Requested size: 455.0pt x 356.46954pt.
- [24
+ [27
 
 ])
 (./tcc.bbl (./tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [25pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
-4}) has been already used, duplicate ignored
+ [28pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.3 ...th{\labelsep}{0pt}\begin{thebibliography}{}
                                                    <./figuras/arquitetura-monit
-oramentoecontrole-eps-converted-to.pdf>] [26]
+oramentoecontrole-eps-converted-to.pdf>] [29]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-) (./editaveis/apendices.tex [27
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 4.
-
-[28
-
-
-] [29
-
-]) (./editaveis/anexos.tex [30
+) (./editaveis/apendices.tex [30
 
 ]
 
@@ -1420,11 +1516,23 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [32
 
+]) (./editaveis/anexos.tex [33
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 4.
+
+[34
+
+
+] [35
+
 ])
 No file tcc.ind.
 
 AED: lastpage setting LastPage
-[33
+[36
 
 ]
 \tf@lof=\write6
@@ -1442,7 +1550,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: C87AD775503754C5AB47AD31196E8ADA;86.
+(rerunfilecheck)             Checksum: 88A0B56310AEEDF83641E5C79CE06762;86.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1450,10 +1558,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 12846 strings out of 493013
- 185127 string characters out of 6139316
- 310639 words of memory out of 5000000
- 15904 multiletter control sequences out of 15000+600000
+ 12872 strings out of 493013
+ 185577 string characters out of 6139316
+ 312343 words of memory out of 5000000
+ 15919 multiletter control sequences out of 15000+600000
  82133 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,38p,715b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1469,10 +1577,10 @@ type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.
 pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-d
 ist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/
 lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (34 pages, 586708 bytes).
+Output written on tcc.pdf (37 pages, 770432 bytes).
 PDF statistics:
- 650 PDF objects out of 1000 (max. 8388607)
- 581 compressed objects within 6 object streams
- 153 named destinations out of 1000 (max. 500000)
- 542 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 682 PDF objects out of 1000 (max. 8388607)
+ 607 compressed objects within 7 object streams
+ 163 named destinations out of 1000 (max. 500000)
+ 531 words of extra memory for PDF output out of 10000 (max. 10000000)
 
