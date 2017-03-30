@@ -1,34 +1,64 @@
 \chapter{Visão Geral}
 
 Para embasar e planejar o projeto a ser desenvolvido, uma proposta de
-arquitetura precisa ser feito. Neste capítulo será apresentado tal proposta,
-sendo inicialmente explanado a arquitetura esperada por subsistemas, e, ao fim
-do capítulo, será mostrada a arquitetura geral do projeto.
+arquitetura precisa ser feito. Neste capítulo será apresentado a proposta do projeto UMISS,
+sendo explanado as arquiteturas de cada subsistema.
 
 \section{Subsistema - Controle e Monitoramento}
 
-O subsistema de controle e monitoramento pode ser dividido em três grandes
-componentes: a parte eletrônica da cadeira-de-rodas, um servidor remoto e um
-aplicativo que será usado pelos responsáveis de um dado paciente.
+O subsistema de controle e monitoramento terá como grande objetivo a aquisição
+dos sinais do paciente, a disponibilização desses recursos para os
+interessados, e a notificação dos responsáveis em casos de eventos críticos.
+Sua arquitetura pode ser dividido em três grandes
+módulos: o módulo que chamaremos \textbf{módulo eletrônico}, que conterá
+grande parte dos componentes eletrônicos do projeto,
+o \textbf{módulo servidor remoto}, que será um servidor remoto disponível
+para ser consumido por outros serviços, e o \textbf{módulo aplicativo},
+que será uma solução em aplicativo para ser utilizado pelos interessados.
 
-A parte eletrônica será composta pelos sensores, que extraírão os sinais do
-paciente, os amplificadores e filtros, que farão o tratamento do sinal
-extraído, um conversor A/D, responsável por transformação dos dados tratados,
-e um sistema embarcado responsável por se comunicar e enviar essas informações
-para os outros componentes.
+\subsection{Módulo Eletrônico}
+O módulo eletrônico será composto principalmente por sensores, amplificadores,
+filtros, conversores, e um sistema embarcado.
+
+Os sensores terão como principal papel a extração dos sinais vitais do
+paciente, e serão acoplados a estrutura da cadeira, de forma que algum
+membro do paciente fique em contato com o sensor, permitindo assim a
+aquisição do sinal.
+
+Os amplificadores e filtros serão responsáveis pelo tratamento do sinal;
+amplificadores tendo o papel de aumentar o ganho extraído pelo sinal,
+e os filtros tendo o papel de atenuar ruídos capturados.
+
+Os conversores terão como papel a conversão dos sinais tratados para um formato
+que o sistema embarcado possa entender; no caso do projeto UMISS, a conversão
+a ser feita será de analógica para digital.
+
+Um sistema embarcado será responsável por receber os sinais do paciente,
+processá-los e utilizá-los em tarefas específicas, e, por fim, despachar os
+dados para o módulo servidor remoto.
+
+\subsection{Módulo Servidor Remoto}
+O módulo servidor remoto é dividido nos seguintes componentes: um servidor remoto
+e gerência de configuração do servidor.
 
 O servidor remoto será um servidor hospedado fora da rede-interna da parte
 eletrônica, e poderá ser acessado via \textit{internet}. Se comunicará com
 o sistema embarcado da parte eletrônica utilizando comunicação
 \textit{via socket}\footnote{\url{https://docs.oracle.com/javase/tutorial/networking/sockets/definition.html}},
-apresentará dados ao aplicativo, e o notificará de ocorrência de eventos
+apresentará dados para o aplicativo, e o notificará da ocorrência de eventos
 críticos.
 
-O aplicativo, que será utilizado pelos responsáveis do paciente, estará
-preparado para receber as notificações do servidor e para mostrar os dados em
-tempo real.
+A gerência de configuração do servidor será composta principalmente de
+configurações e \textit{scripts} que vão permitir a manutenção e
+interoperabilidade entre o servidor e outros recursos.
 
-Abaixo é possível ver o ciclo-de-vida típico do subsistema.
+\subsection{Módulo aplicativo}
+
+O aplicativo só tem si próprio como componente, e será utilizado regularmente
+pelos responsáveis do paciente; estará preparado para receber as notificações
+do servidor e para mostrar os dados em tempo real.
+
+\subsection{Integração entre os módulos}
 
 \begin{figure}[H]
   \centering
