@@ -217,10 +217,10 @@ F_{a} = M \cdot a = 150 \cdot 0,20834 = 31,25 N
 Também deve ser levado em conta a força necessária para colocar 
 a massa da cadeira
 em movimento, 
-e usamos um valor de coeficiente de atrito estático $\varsigma_{a} = 0,3$.
+e usamos um valor de coeficiente de atrito estático $\mu = 0,3$.
 
 \begin{equation}
-F_{r} = M \cdot g \cdot \varsigma_{a} = 441,45 N
+F_{r} = M \cdot g \cdot \mu = 441,45 N
 \end{equation}
 
 Então, a força total solicitada para que a cadeira seja movida 
@@ -263,7 +263,7 @@ em um plano inclinado de 8 graus é dada pela soma da força de resistência
 ao movimento e da força de aceleração, e ainda a força referente a inclinação do piso:
 
 \begin{equation}
-F_{T} = F_{r} + F_{a} + F_{i} = [\varsigma_{a} \cdot M \cdot g \cdot cos(8º)] + [M_{a}] + [M \cdot g \cdot sin(8º)]
+F_{T} = F_{r} + F_{a} + F_{i} = [\mu \cdot M \cdot g \cdot cos(8º)] + [M_{a}] + [M \cdot g \cdot sin(8º)]
 \end{equation}
 
 \begin{equation}
@@ -424,7 +424,7 @@ correspondentes às entradas dos potenciômetros e o eixo Z corresponde ao botã
 
 \begin{figure}[H]
   \centering
-    \includegraphics[width=\textwidth]{figuras/joystick.eps}
+    \includegraphics[scale=0.4]{figuras/joystick.eps}
   \caption{\textit{Joystick} de três eixos para controle de velocidade e direção da cadeira.}
   \label{fig:joystick}
 \end{figure}
@@ -505,8 +505,8 @@ entregar as rodas que serão utilizadas no projeto o movimento desejado.
   \label{fig:structure_arch}
 \end{figure}
 
-Como apresentado na Figura \ref{fig:structure_arch}, no fluxograma à esquerda, o primeiro passo 
-será a modelagem manual de um sketch para melhor visualização 
+Como apresentado na Figura \ref{fig:structure_arch}, no fluxograma 1 (à esquerda), o primeiro passo 
+será a modelagem manual de um \textit{sketch} para melhor visualização 
 e maior facilidade para um Brainstorming visando a melhor ideia 
 de Cadeira de roda ou Adquirir uma cadeira para adaptar. 
 O segundo passo é a escolha do material, levando em consideração 
@@ -523,6 +523,3 @@ possível a
 aquisição de uma caixa totalmente projetada, caso não seja possível, 
 será inevitável a busca de alternativas para melhor utilização dos motores.
 
-\section{Outros}
-
-\subsection{Integração Contínua}
