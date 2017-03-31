@@ -39,16 +39,16 @@ foram formuladas as tabelas abaixo.
 \begin{table}[h]
 \centering
 \vspace{0.5cm}
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c|c|c|c|}
 \hline
-Riscos - Projeto Estrutural    & Leve            & Médio          \\
+    Riscos - Projeto Estrutural    & Probabilidade & Impacto & Risco \\
 \hline
-Acidentes causados por imperícia do usuário         & Médio & Leve \\
-Falha estrutural                                    & Baixo & Grave \\
-Falha na transmissão                                & Médio & Grave \\
-Falha na mobilidade da cadeira                      & Médio & Médio \\
-Falha de montagem                                   & Baixo & Médio \\
-Falta de recurso para o cumprimento dos requisitos  & Médio & Médio \\
+    Acidentes causados por imperícia do usuário         & Médio & Leve & Moderado \\
+    Falha estrutural                                    & Baixo & Grave & Elevado \\
+    Falha na transmissão                                & Médio & Grave & Extremo \\
+    Falha na mobilidade da cadeira                      & Médio & Médio & Elevado \\
+    Falha de montagem                                   & Baixo & Médio & Moderado \\
+    Falta de recurso para o cumprimento dos requisitos  & Médio & Médio & Elevado \\
 \hline
 \end{tabular}
 \caption{Riscos - Subsistema Projeto Estrutural}
@@ -58,13 +58,13 @@ Falta de recurso para o cumprimento dos requisitos  & Médio & Médio \\
 \begin{table}[h]
 \centering
 \vspace{0.5cm}
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c|c|c|c|}
 \hline
-Riscos - Processamento de Sinais e Monitoramento       & Probabilidade & Impacto \\
+    Riscos - Processamento de Sinais e Monitoramento       & Probabilidade & Impacto & Risco \\
 \hline
-Falha na transmissão de dados           & Baixo         & Grave \\
-Instabilidade de sevidores e serviços   & Baixo         & Médio \\
-Falha de aquisição de dados do usuário  & Médio         & Grave \\
+    Falha na transmissão de dados           & Baixo         & Grave & Elevado \\
+    Instabilidade de sevidores e serviços   & Baixo         & Médio & Moderado \\
+    Falha de aquisição de dados do usuário  & Médio         & Grave & Extremo \\
 \hline
 \end{tabular}
 \caption{Riscos - Subsistema Processamento de Sinais e Monitoramento}
@@ -74,13 +74,14 @@ Falha de aquisição de dados do usuário  & Médio         & Grave \\
 \begin{table}[h]
 \centering
 \vspace{0.5cm}
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c|c|c|c|}
 \hline
-Riscos - Controle e Alimentação        & Probabilidade & Impacto \\
+    Riscos - Controle e Alimentação        & Probabilidade & Impacto & Risco \\
 \hline
-Alta temperatura do motor   & Alto          & Grave \\
-Vida útil da bateria        & Médio         & Médio \\
-Descarregamento da bateria  & Baixo         & Médio \\
+    Alta temperatura do motor   & Alto          & Grave & Extremo \\
+    Vida útil da bateria        & Médio         & Médio & Elevado \\
+    Descarregamento da bateria  & Baixo         & Médio & Moderado\\
+    Queima de componentes & Baixo & Grave & Elevado \\
 \hline
 \end{tabular}
 \caption{Probabilidade/Impacto dos riscos de Controle e Alimentação}
@@ -95,13 +96,13 @@ grau a classificação definida.
 \begin{table}[h]
 \centering
 \vspace{0.5cm}
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c|c|c|c|}
 \hline
-Riscos                    & Probabilidade & Impacto \\
+    Riscos                    & Probabilidade & Impacto & Risco \\
 \hline
-Projeto Estrutural                 & Médio         & Médio \\
-Processamento de Sinais e Monitoramento  & Médio         & Médio \\
-Controle e Alimentação               & Médio         & Médio \\
+    Projeto Estrutural                 & Médio         & Médio & Elevado \\
+    Processamento de Sinais e Monitoramento  & Médio         & Médio & Elevado \\
+    Controle e Alimentação               & Médio         & Médio & Elevado \\
 \hline
 \end{tabular}
 \caption{Probabilidade/Impacto dos riscos de cada subárea}
