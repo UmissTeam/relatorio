@@ -168,9 +168,6 @@ Na Figura \ref{sensors} é possível visualizar modelos comuns dos sensores e el
 \end{figure}
 
 \section{Subsistema - Controle e Alimentação}
-
-\section{Subsistema - Projeto Estrutural}
-
 Neste projeto serão usados motores de corrente contínua a fim de movimentar o conjunto
 cadeira $+$ paciente, esses motores devem ser capazes de fornecer o torque solicitado
 nas diversas situações, como o uso com carga elevada e a movimentação em aclives.
@@ -190,7 +187,7 @@ Um exemplo de rotor e estator é mostrado na figura~\ref{fig:rotor}.
   \label{fig:rotor}
 \end{figure}
 
-\subsection{Dimensionamento Sistema Eletromecânico}
+\subsection{Dimensionamento do Sistema Eletromecânico}
 
 Para a análise das características requeridas de torque e potência foram estimados
 massa do sistema foi estimada como $150 kg$, a sua velocidade máxima como $3 km/h$
@@ -199,33 +196,46 @@ possível calcular a força necessária para colocar a cadeira em movimento bem 
 para a acelerar até a velocidade máxima. Dividindo a velocidade pelo tempo necessário
 para se alcançar a velocidade é possível calcular a aceleração.
 
-$a =V/t =3/3.6*4= 0,20834 m/s2$
+\begin{equation}
+a = \frac{V}{t} = \frac{3}{3,6\cdot 4} = 0,20834  \frac{m}{s^2}
+\end{equation}
 
 Em seguida calculamos a força necessária para acelerar a massa de $150 kg$.
 
-$F_a=M * a =150 * 0,20834 = 31,25 N$
+\begin{equation}
+F_{a} = M \cdot a = 150 \cdot 0,20834 = 31,25 N
+\end{equation}
 
 Também deve ser levado em conta a força necessária para colocar a massa da cadeira
 em movimento, e usamos um valor de coeficiente de atrito estático $a = 0,3$.
-$F_r=M*g* a = 441,45N$
 
-Então a força total solicitada é dada pela soma da força de resistência ao movimento
+\begin{equation}
+F_{r} = M \cdot g \cdot a = 441,45 N
+\end{equation}
+
+Então, a força total solicitada é dada pela soma da força de resistência ao movimento
 e da força de aceleração.
 
-$F_T=F_a+F_r=441,45+31,25 = 472,7 N$
+\begin{equation}
+F_{T} = F_{a} + F_{r} = 472,7 N
+\end{equation}
 
 Finalmente é possível calcular o torque solicitado utilizando o raio do eixo do
 motor de $4mm$.
 
-$T=F_T*R=472,7*0,004=1,8908 Nm$
+\begin{equation}
+T = F_{T} \cdot R = 472,7 \cdot 0,004 = 1,8908 N\cdot m
+\end{equation}
 
 A potência requerida é calculada multiplicando-se o torque pela velocidade máxima.
 
-$P=T*V=441,45*0,83334 = 367 W$
+\begin{equation}
+P = T \cdot V = 441,45 \cdot 0,83334 = 367 W
+\end{equation}
 
 \subsection{Especificações do Motor}
 
-Serão utilizados dois motores da Bosch modelo GPB F006 KM0 611, que tem aplicações
+Serão utilizados dois motores Bosch modelo GPB F006 KM0 611, que tem aplicações
 em sistemas de arrefecimento, o emprego dos dois motores satisfaz as exigências
 de potência e torque do sistema. As curvas características desse motor e seus
 dados técnicos são mostrados a seguir.
@@ -233,7 +243,7 @@ dados técnicos são mostrados a seguir.
 \begin{figure}[H]
   \centering
     \includegraphics[width=\textwidth]{figuras/motor.eps}
-  \caption{Curvas motor GPB F006 KM0 611 (Bosch)}
+  \caption{Curvas de motor GPB F006 KM0 611 (Bosch)}
   \label{fig:motor}
 \end{figure}
 
@@ -270,18 +280,28 @@ compatível tanto com a necessidade dos motores quanto com a disponibilidade dos
 modelos de mercado. Tendo em vista a potência calculada e a tensão estabelecida
 é possível calcular a corrente necessária.
 
-$P = V*I$
-$I = 367 W / 12 V =30,58 A$
+\begin{equation}
+P = V \cdot I
+\end{equation}
+
+\begin{equation}
+I = \frac{367}{12} = 30,58 A
+\end{equation}
 
 Com esse valor de corrente e o tempo de trabalho do sistema é possível calcular
 a carga da bateria.
-$C = I * t= 30,58 * 3 =91,74 Ah$
+
+\begin{equation}
+C = I \cdot t = 30,58 \cdot 3 = 91,74 Ah
+\end{equation}
 
 Sabe-se que a bateria não deve ser totalmente descarregada, pois isso diminui a
 vida útil da mesma, logo deve ser utilizado um fator de profundidade de descarga,
 que nesse caso será de $80\%$ \cite{KARASINSKI}.
 
-$C=91,74/0,8 = 114,675 Ah$
+\begin{equation}
+C = \frac{91,74}{0,8} = 114,675 Ah
+\end{equation}
 
 Um ponto importante no dimensionamento é o fato de o sistema de movimentação não
 operar em plena carga a todo tempo, havendo momentos em que a potência necessária
@@ -290,12 +310,14 @@ se estimar um fator de demanda para os motores, para esse projeto o valor
 adotado de para o fato de demanda será de $0,75$. Com isso temos que a carga
 necessária será de:
 
-$C=114,675 *0,75=86 Ah$
+\begin{equation}
+C = 114,675 \cdot 0,75 = 86Ah
+\end{equation}
 
 Uma possível solução que prioriza a variável custo é a utilização de $3$ baterias
 de chumbo-ácido de $30 Ah$ ligadas em paralelo.
 
-
+\section{Subsistema - Projeto Estrutural}
 
 \section{Outros}
 
