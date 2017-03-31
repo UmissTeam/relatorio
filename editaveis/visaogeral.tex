@@ -99,7 +99,9 @@ Estas três ferramentas irão compor juntas o passo (5).
 
 \subsubsection{Sistema Embarcado}
 Um sistema central de processamento foi selecionado para compor o passo (4).
-A placa de desenvolvimento Raspberry Pi 3 Model B, apresentada na Figura \ref{rasp} foi selecionada para
+A placa de desenvolvimento Raspberry Pi 3 Model B
+\footnote{\url{https://www.raspberrypi.org/products/raspberry-pi-3-model-b/}}
+, apresentada na Figura \ref{fig:rasp} foi selecionada para
 a execução do processamento dos dados adiquiridos por possuir, além de alta 
 velocidade de processamento, conexão WiFi, o que possibilita a comunicação 
 com o servidor remoto, de acordo com os requisitos do projeto.
@@ -113,7 +115,7 @@ com o servidor remoto, de acordo com os requisitos do projeto.
 
 \subsubsection{Conversor AD}
 Para a conversão dos sinais analógicos para digitais, foi selecionado o conversor 
-AD ADS1115, apresentado na Figura \ref{ads}, que possui quatro canais de entrada analógica, resolução de 16 bits 
+AD ADS1115, apresentado na Figura \ref{fig:ads}, que possui quatro canais de entrada analógica, resolução de 16 bits 
 e amostragem de 800Hz. 
 
 \begin{figure}[H]
@@ -158,12 +160,12 @@ Para a aquisição dos sinais de temperatura corporal, serão utilizados termist
 
 Além, para captura de sinais de frequência cardíaca, serão utilizados sensores ópticos ou eletrodos de contato para captura dos sinais de eletrocardiograma (ECG).
 
-Na Figura \ref{sensors} é possível visualizar modelos comuns dos sensores e eletrodos utilizados.
+Na Figura \ref{fig:sensors} é possível visualizar modelos comuns dos sensores e eletrodos utilizados.
 
 \begin{figure}[H]
   \centering
     \includegraphics[width=\textwidth]{figuras/sensors.eps}
-  \caption{Sensores e eletrodos para captura de sinais: Termistor NTC 10K para temperatura, oximetro de dedo para frequência cardíaca e contatos de prata para captura de GSR.}
+  \caption{Sensores e eletrodos para captura de sinais.}
   \label{fig:sensors}
 \end{figure}
 
@@ -248,7 +250,7 @@ movimento da cadeira se dê em um plano horizontal e liso.
 Para que a cadeira se movimente em rampas é necessário considerar 
 a inclinação das mesmas nos cálculos, para isso a Norma ABNT NBR 9050 \cite{nbr9050}
 estipula a inclinação máxima que rampas de acessibilidade 
-podem ter, que é de aproximadamente 8°. Assim, adotando que a velocidade 
+podem ter, que é de aproximadamente 8 graus. Assim, adotando que a velocidade 
 máxima alcançada pela cadeira em aclives seja de 2 km/h, tem-se o 
 dimensionamento da aceleração para essa situação: 
 
@@ -257,7 +259,7 @@ a = \frac{V}{t} = \frac{2}{3,6 \cdot 4} = 0,1389 \frac{m}{s^2}
 \end{equation}
 
 Então a força total solicitada para que a cadeira seja movida 
-em um plano inclinado de 8° é dada pela soma da força de resistência 
+em um plano inclinado de 8 graus é dada pela soma da força de resistência 
 ao movimento e da força de aceleração, e ainda a força referente a inclinação do piso:
 
 \begin{equation}
@@ -468,7 +470,7 @@ possui uma corrente de operação nominal de $25$ A.
 \begin{figure}[H]
   \centering
     \includegraphics[width=\textwidth]{figuras/ponte_h.eps}
-  \caption{Esquemático de sistema de Ponte H com transistores para controle de sentido de rotação dos motores.}
+  \caption{Esquemático de sistema de Ponte H.}
   \label{fig:ponte_h}
 \end{figure}
 
@@ -499,7 +501,7 @@ entregar as rodas que serão utilizadas no projeto o movimento desejado.
 \begin{figure}[H]
   \centering
     \includegraphics[width=\textwidth]{figuras/structure_arch.eps}
-  \caption{Fluxogramas com tomadas de decisão para cada ponto: Estrutura e Transmissão.}
+  \caption{Fluxogramas com tomadas de decisão.}
   \label{fig:structure_arch}
 \end{figure}
 

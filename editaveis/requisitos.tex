@@ -10,8 +10,8 @@ no projeto.
 \section{Requisitos Gerais}
 
 \begin{enumerate}
-  \item Desenvolver a estrutura da cadeira.
-  \item Atender portadores de mobilidade reduzida, especificamente os paraplégicos.
+  \item Adaptar a estrutura da cadeira;
+  \item Atender portadores de mobilidade reduzida;
   \item O sistema precisa estar conectado à internet.
 \end{enumerate}
 
@@ -26,51 +26,54 @@ no projeto.
       \item Resistência galvânica da pele
     \end{enumerate}
   \item Os meios de captura dos sinais do paciente devem ser não invasivos.
-  \item O sistema deverá ser capaz de tratar sinais extraídos e realizar as
+  \item O sistema deverá ser capaz de tratar os sinais extraídos e realizar as
     conversões necessárias para processamento.
   \item O sistema deve atualizar os dados no servidor com variações de 5\% do
     último valor recebido.
-  \item Possibilidade de notificar algum parente.
+  \item Possibilidade de notificar parentes.
   \item Interação com recursos via aplicativo.
   \item O sistema deverá ser capaz de apresentar o histórico de dados
     capturados ao usuário.
   \item O sistema deve ser capaz de reiniciar o processador no caso de erros de
     captura de sinais, evitando o travamento completo do sistema.
-  \item O sistema mobile deve ser capaz de notificar algum responsável quando
+  \item O sistema \textit{mobile} deve ser capaz de notificar algum responsável quando
     um dos módulos essenciais para o funcionamento não estiver funcionando corretamente.
   \item O sistema deve apresentar um tempo de resposta máximo de 30 segundos
     até que o evento crítico seja identificado;
-  \item O sistema web deve funcionar nos navegadores chrome e firefox.
-  \item O aplicativo mobile deverá funcionar nas versões 4.4 do Android em diante.
-  \item As ferramentas utilizadas deverão ter suporte para Linux.
+  \item O sistema web deve funcionar nos navegadores
+      Chrome\footnote{\url{https://www.google.com/chrome/}} e
+        Firefox\footnote{\url{https://www.mozilla.org/en-US/firefox/new/}}.
+    \item O aplicativo \textit{mobile} deverá funcionar nas versões 4.4 do Android em diante.
+  \item As ferramentas utilizadas deverão ter suporte para
+      Linux\footnote{\url{https://www.linux.com/}}.
 \end{enumerate}
 
 \section{Controle e Alimentação}
 \begin{enumerate}[resume*]
 \item Os motores devem fornecer o torque requerido pela carga de 150kg, inclusive em rampas de acessibilidade;
 \item Os motores devem ser capazes de manter uma velocidade máxima de 3 km/h, em planos horizontais e lisos;
-\item Os motores devem ser capazes de manter uma velocidade máxima de 2 km/h, em planos inclinados de até 8°, de acordo com a norma NBR 9050;
+\item Os motores devem ser capazes de manter uma velocidade máxima de 2 km/h, em planos inclinados de
+    até 8$^{\circ}$, de acordo com a norma NBR 9050;
 \item A bateria deve ser capaz de manter os sistemas de movimentação e monitoramento funcionando por 3 horas;
-\item Os drivers para controle dos motores devem funcionar com potência equivalente a dos motores;
+\item Os \textit{drivers} para controle dos motores devem funcionar com potência equivalente à dimensionada;
 \item O sistema de dissipação de calor deve ser efetivo e não prejudicar o usuário com o aumento de velocidade do motor;
-\item O controle via joystick deve ser intuitivo ao usuário e de fácil manuseio;
+\item O controle via \textit{joystick} deve ser intuitivo ao usuário e de fácil manuseio;
 \item Os motores não devem superaquecer o sistema, havendo dimensionamento correto da corrente;
 \end{enumerate}
 
 \section{Projeto Estrutural}
 
 \begin{enumerate}[resume*]
-  \item A estrutura da cadeira suportará uma pessoa com peso de até 100kg.
-  \item A cadeira terá que suportar o peso de sua estrutura, conjunto de bateria
-    e motores e usuário.
-  \item O motor deve transmitir torque suficiente para movimentar a cadeira sem
-    problemas até em rampas.
+  \item A estrutura da cadeira suportará uma pessoa com peso de até 80kg.
+  \item A cadeira terá que suportar o peso de sua estrutura, conjunto de bateria,
+      sistemas eletrônicos, motores e usuário.
   \item A estrutura deve atender aos princípios de ergonomia presente na NBR
     9050\footnote{\url{http://www.ufpb.br/cia/contents/manuais/abnt-nbr9050-edicao-2015.pdf}}.
   \item A cadeira deverá ter apoio para as mãos de quem tiver que empurrá-la
     caso o motor não funcione no momento.
+  \item A bateria deve ser removível.
   \item A cadeira deverá ter estabilidade suficiente para que o usuário não se
-    desequilibrar com ela.
+    desequilibre com ela.
   \item A cadeira deverá possuir mecanismo de frenagem para caso o usuário
     queira parar em qualquer lugar, seja em uma rampa ou em terreno plano.
   \item A cadeira deverá ser capaz de se movimentar para frente e para trás
