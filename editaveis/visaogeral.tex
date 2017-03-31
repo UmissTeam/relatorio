@@ -191,9 +191,14 @@ Um exemplo de rotor e estator é mostrado na figura~\ref{fig:rotor}.
 \subsubsection{Dimensionamento do Sistema Eletromecânico}
 
 Para a análise das características requeridas de torque e potência foram estimados
-massa do sistema foi estimada como $150 kg$, a sua velocidade máxima como $3 km/h$
-e o tempo para atingir tal velocidade como $4$ segundos. A partir desses dados é
-possível calcular a força necessária para colocar a cadeira em movimento bem como
+massa do 
+sistema foi estimada como $150 kg$, a sua velocidade máxima 
+como $3 km/h$
+e o tempo para atingir tal velocidade como $4$ segundos. 
+A partir desses dados é
+possível 
+calcular a força necessária para colocar a cadeira em movimento 
+bem como
 para a acelerar até a velocidade máxima. Dividindo a velocidade pelo tempo necessário
 para se alcançar a velocidade é possível calcular a aceleração.
 
@@ -207,15 +212,19 @@ Em seguida calculamos a força necessária para acelerar a massa de $150 kg$.
 F_{a} = M \cdot a = 150 \cdot 0,20834 = 31,25 N
 \end{equation}
 
-Também deve ser levado em conta a força necessária para colocar a massa da cadeira
-em movimento, e usamos um valor de coeficiente de atrito estático $a = 0,3$.
+Também deve ser levado em conta a força necessária para colocar 
+a massa da cadeira
+em movimento, 
+e usamos um valor de coeficiente de atrito estático $\varsigma_{a} = 0,3$.
 
 \begin{equation}
-F_{r} = M \cdot g \cdot a = 441,45 N
+F_{r} = M \cdot g \cdot \varsigma_{a} = 441,45 N
 \end{equation}
 
-Então, a força total solicitada é dada pela soma da força de resistência ao movimento
-e da força de aceleração.
+Então, a força total solicitada para que a cadeira seja movida 
+em um plano 
+horizontal e liso é dada pela soma da força de resistência ao 
+movimento e da força de aceleração.
 
 \begin{equation}
 F_{T} = F_{a} + F_{r} = 472,7 N
@@ -228,10 +237,51 @@ motor de $4mm$.
 T = F_{T} \cdot R = 472,7 \cdot 0,004 = 1,8908 N\cdot m
 \end{equation}
 
-A potência requerida é calculada multiplicando-se o torque pela velocidade máxima.
+A potência requerida é calculada multiplicando-se a força pela velocidade máxima.
 
 \begin{equation}
-P = T \cdot V = 441,45 \cdot 0,83334 = 367 W
+P = F_{T} \cdot V = 472,7 \cdot 0,83334 = 393 W
+\end{equation}
+
+Diante disso, o dimensionamento acima foi feito para que o 
+movimento da cadeira se dê em um plano horizontal e liso. 
+Para que a cadeira se movimente em rampas é necessário considerar 
+a inclinação das mesmas nos cálculos, para isso a Norma ABNT NBR 9050 \cite{nbr9050}
+estipula a inclinação máxima que rampas de acessibilidade 
+podem ter, que é de aproximadamente 8°. Assim, adotando que a velocidade 
+máxima alcançada pela cadeira em aclives seja de 2 km/h, tem-se o 
+dimensionamento da aceleração para essa situação: 
+
+\begin{equation}
+a = \frac{V}{t} = \frac{2}{3,6 \cdot 4} = 0,1389 \frac{m}{s^2}
+\end{equation}
+
+Então a força total solicitada para que a cadeira seja movida 
+em um plano inclinado de 8° é dada pela soma da força de resistência 
+ao movimento e da força de aceleração, e ainda a força referente a inclinação do piso:
+
+\begin{equation}
+F_{T} = F_{r} + F_{a} + F_{i} = [\varsigma_{a} \cdot M \cdot g \cdot cos(8º)] + [M_{a}] + [M \cdot g \cdot sin(8º)]
+\end{equation}
+
+\begin{equation}
+F_{T} = [0,3 \cdot 150 \cdot 9,81 \cdot cos(8º)] + [150 \cdot 0,1389] + [150 \cdot 9,81 \cdot sin(8º)]
+\end{equation}
+
+\begin{equation}
+F_{T} = 643,2319 N
+\end{equation}
+
+Com isso é possível calcular o torque solicitado utilizando o raio do eixo do motor de 4mm.
+
+\begin{equation}
+T = F_{T} \cdot R = 643,2319 \cdot 0,0004 = 2,5729 N \cdot m
+\end{equation}
+
+A potência requerida é calculada multiplicando-se a força total pela velocidade máxima.
+
+\begin{equation}
+P = F_{T} \cdot V = 643,2319 \cdot 0,55556 = 357,35 W
 \end{equation}
 
 \subsubsection{Especificações do Motor}
@@ -267,6 +317,10 @@ Peso                & 1,585 kg \\
 \label{tab:dadosmotor}
 \end{table}
 
+Como foram selecionados dois motores, é válido ressaltar 
+que os valores de torque e potência dimensionados acima deverão ser divididos por dois.
+
+
 \subsubsection{Dimensionamento da Bateria}
 
 Sabe-se que a potência necessária para movimentar a cadeira de rodas é de $367 W$,
@@ -286,14 +340,14 @@ P = V \cdot I
 \end{equation}
 
 \begin{equation}
-I = \frac{367}{12} = 30,58 A
+I = \frac{393}{12} = 32,75 A
 \end{equation}
 
 Com esse valor de corrente e o tempo de trabalho do sistema é possível calcular
 a carga da bateria.
 
 \begin{equation}
-C = I \cdot t = 30,58 \cdot 3 = 91,74 Ah
+C = I \cdot t = 32,75 \cdot 3 = 98,25 Ah
 \end{equation}
 
 Sabe-se que a bateria não deve ser totalmente descarregada, pois isso diminui a
@@ -301,7 +355,7 @@ vida útil da mesma, logo deve ser utilizado um fator de profundidade de descarg
 que nesse caso será de $80\%$ \cite{KARASINSKI}.
 
 \begin{equation}
-C = \frac{91,74}{0,8} = 114,675 Ah
+C = \frac{98,25}{0,8} = 122,125 Ah
 \end{equation}
 
 Um ponto importante no dimensionamento é o fato de o sistema de movimentação não
@@ -312,7 +366,7 @@ adotado de para o fato de demanda será de $0,75$. Com isso temos que a carga
 necessária será de:
 
 \begin{equation}
-C = 114,675 \cdot 0,75 = 86Ah
+C = 122,125 \cdot 0,75 = 92,1Ah
 \end{equation}
 
 Uma possível solução que prioriza a variável custo é a utilização de $3$ baterias
@@ -419,6 +473,53 @@ possui uma corrente de operação nominal de $25$ A.
 \end{figure}
 
 \section{Subsistema - Projeto Estrutural}
+O Subsistema de estrutura será dividido em dois elementos: 
+Elemento Estrutural da Cadeira de Roda e Elemento de Transmissão 
+que conduz o torque do motor para as rodas da Cadeira.
+
+Nesse subconjunto estrutural, os componentes do projeto irão 
+manufaturar uma Cadeira de Roda de maneira que possa sustentar 
+os componentes como motores, baterias, sensores e até mesmo o 
+usuário. Para isso será utilizado \textit{Sketchs} Manuais 
+para encontrar saídas factíveis para a melhor execução do projeto, 
+escolha de materiais, projetar o esquemático em 3D, 
+utilização também de um software CAE para análises estática, 
+modal e de fadiga.Será feito também um estudo ergonômico 
+para que o usuário tenha completo conforto quando utilizar a 
+cadeira, tanto ao sentar quanto ao apoiar a cabeça. Por fim a 
+manufatura será executada de acordo com o material escolhido 
+e com as técnicas que oferecem a estrutura mais próxima do ideal.
+
+Já o subconjunto da Transmissão irá desempenhar a função de 
+transformar o torque do motor utilizado em movimento \cite{cardoso}. 
+Assim, com as especificações dos motores que serão utilizados 
+será possível modelar ou adquirir uma caixa de redução pronta para 
+entregar as rodas que serão utilizadas no projeto o movimento desejado.
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=\textwidth]{figuras/structure_arch.eps}
+  \caption{Fluxogramas com tomadas de decisão para cada ponto: Estrutura e Transmissão.}
+  \label{fig:structure_arch}
+\end{figure}
+
+Como apresentado na Figura \ref{fig:structure_arch}, no fluxograma à esquerda, o primeiro passo 
+será a modelagem manual de um sketch para melhor visualização 
+e maior facilidade para um Brainstorming visando a melhor ideia 
+de Cadeira de roda ou Adquirir uma cadeira para adaptar. 
+O segundo passo é a escolha do material, levando em consideração 
+o custo-benefício e facilidade com a utilização das técnicas de 
+usinagem e conformação mecânica. O terceiro e quarto passo será 
+utilizar com o auxílio de softwares CAD/CAE ( ANSYS e CATIA V5R19) 
+para validar a estrutura em ambiente computacional. O quinto também 
+com o auxílio do CAD, será utilizado algumas normas para melhor 
+aplicar as normas de ergonomia. Por fim, com todos os passos anteriores bem sucedido o último passo seria a concepção do 
+trabalho completo, a manufatura da estrutura. Em paralelo, o fluxograma à direira da \ref{fig:structure_arch}, 
+que visa estudar a possibilidade de modelar uma caixa de redução 
+para entregar um movimento aceitável para a cadeira. Caso não seja 
+possível a 
+aquisição de uma caixa totalmente projetada, caso não seja possível, 
+será inevitável a busca de alternativas para melhor utilização dos motores.
 
 \section{Outros}
 
