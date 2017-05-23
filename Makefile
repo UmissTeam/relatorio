@@ -1,4 +1,4 @@
-TARGET = TCC_FGA.pdf
+TARGET = UMISS_pi2.pdf
 
 BIBTEX = bibtex
 LATEX = latex
@@ -15,11 +15,10 @@ FIXOS_SOURCES = informacoes.tex fichaCatalografica.tex \
 FIXOS_FILES = $(addprefix $(FIXOS_DIR)/, $(FIXOS_SOURCES))
 
 EDITAVEIS_DIR = editaveis
-EDITAVEIS_SOURCES = informacoes.tex errata.tex dedicatoria.tex \
-					agradecimentos.tex epigrafe.tex resumo.tex abstract.tex \
+EDITAVEIS_SOURCES = informacoes.tex errata.tex \
+					  resumo.tex abstract.tex \
 					abreviaturas.tex simbolos.tex introducao.tex \
-					aspectosgerais.tex consideracoes.tex textoepostexto.tex \
-					elementosdotexto.tex elementosdopostexto.tex \
+					 consideracoes.tex  \
 					apendices.tex anexos.tex
 
 EDITAVEIS_FILES = $(addprefix $(EDITAVEIS_DIR)/, $(EDITAVEIS_SOURCES))
