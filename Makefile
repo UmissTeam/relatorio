@@ -1,7 +1,7 @@
 TARGET = UMISS_pi2.pdf
 
 BIBTEX = bibtex
-LATEX = latex
+LATEX = pdflatex
 DVIPS = dvips
 PS2PDF = ps2pdf
 
