@@ -7,7 +7,7 @@ de desenvolvimento. Por fim, trataremos as instâncias do projeto desenvolvido.
 
 \subsection{Papel da API}
 \label{sub:papel_da_api}
-O backend do sistema, responsável por fazer o controle das requisições,
+O \textit{backend} do sistema, responsável por fazer o controle das requisições,
 atuando como intermediador à cadeira e aos seus respectivos monitores   
 foi desenvolvida utilizando o \textit{Django Rest Framework}. Este é uma
 referência no mundo de desenvolvimento \textit{Python} para \textit{API's Rest}.
@@ -19,10 +19,10 @@ do monitor.
 
 A manipulação dos dados é feita de forma segura, tratando a autenticação dos usuários
 que lidam com o sistema e redirecionando os dados de acordo com a sua autenticação.
-Para executar estes passos, o servidor conta com um poderoso sistema de autencação
+Para executar estes passos, o servidor conta com um poderoso sistema de autenticação
 dos seus usuários, tanto para os pacientes que utilizam a cadeira, quanto para os
 monitores que manipulam as interfaces para cliente, como mobile e interface web.
-Os pacientes são cadastrados no sistema e enviam os sinais corporias para o servidor.
+Os pacientes são cadastrados no sistema e enviam os sinais corporais para o servidor.
 O servidor, além de enviar uma notificação para o monitor respectivo, armazena este
 sinal em sua base de dados e retorna ao monitor quando solicitado.
 Os dados enviados ao monitor são apenas os sinais respectivos ao paciente que está
@@ -30,8 +30,8 @@ sendo monitorado.
 
 A ligação entre o paciente e o monitor pode ser feita no momento do cadastro ou em
 atualizações futuras. O paciente contém um identificador único em sua cadeira, que
-pode ser utilizada pelo monitor para supervisioná-lo. No momento que o monitor insere
-os dados no sistema, automaticamente serão ligados e o monitor terá acesso aos dados
+pode ser utilizado pelo monitor para supervisioná-lo. No momento que o monitor insere
+os dados no sistema, automaticamente será ligado ao paciente e terá acesso aos dados
 de sinais enviados pelo paciente.
 
 \subsection{\textit{Design} e Arquitetura da Solução}
@@ -55,13 +55,13 @@ Como pode ser observado, existem três camadas principais, que são utilizadas
 para a manipulação dos dados. Elas são:
 
 \begin{itemize}
-    \item Presentation Tier;
-    \item Business Tier;
-    \item Data Tier.
+    \item \textit{Presentation Tier;}
+    \item \textit{Business Tier;}
+    \item \textit{Data Tier.}
 \end{itemize}
 
-A primeira, \textit{Presentation Tier} é resposável por ser a interface com as demais aplicações
-que irão utilizar os servidor. Essa camada é responsável por gerir as rotas do sistema, direcionando
+A primeira, \textit{Presentation Tier} é responsável por ser a interface com as demais aplicações
+que irão utilizar o servidor. Essa camada é responsável por gerir as rotas do sistema, direcionando
 as urls solicitadas a funções específicas. Após mapeado nas funções, estas irão verificar as permissões
 de cada requisição, bem como cada usuário que está solicitando uma determinada ação.
 
@@ -69,13 +69,13 @@ Além disso, nesta camada, existe uma transformação importante para o consumo 
 Esta é conhecida como serialização dos dados, tanto para quem envia, quanto para quem solicita.
 Sua responsabilidade é aplicar um modelo de dados formalizado na comunidade, conhecido como Json.
 Dessa forma, todo tipo de dado recebido, assim como os enviados são transformados  a partir
-dos dobjetos python. Esta fase é aplicada logo após a aplicação das rotas para as respectivas
+dos objetos python. Esta fase é aplicada logo após a aplicação das rotas para as respectivas
 ações.
 
-As funções mapeadas na Tier passada utiliza de modelos preedefinidas na Tier de Business.
+As funções mapeadas na Tier passada utiliza de modelos preedefinidos na Tier de Business.
 Aqui são definidos os domínios da aplicação, bem como quais são as classes e negócio da
 aplicação. Nesta fase são definidos os tipos de usuários do sistema, as classes de sinais
-corporais do paciente e toda parte a de negócios da aplicação.
+corporais do paciente e toda parte  de negócios da aplicação.
 
 A última camada, chamada de \textit{Data Tier} é responsável por lidar com a persistência dos dados
 de todos os usuários e sinais que são manipulados no sistema. Esta camada modela o
@@ -105,9 +105,9 @@ foram criados as demais especializações com suas características  específica
 \begin{itemize}
     \item Sinais de temperatura corporal;
     \item Sinais de batimento cardíaco;
-    \item Sinais de resitência galvânica.
+    \item Sinais de resistência galvânica.
 \end{itemize}
 
-Por fim, existem ligações dos usuários com os sinais corporiais, sendo que os pacientes
-são donos dos sinais corporais. Assim como exitem pacientes que possuem monitores ligados,
+Por fim, existem ligações dos usuários com os sinais corporais, sendo que os pacientes
+são donos destes. Assim como exitem pacientes que possuem monitores ligados,
 gerando um relacionamento cíclico entre as entidades de usuário.
