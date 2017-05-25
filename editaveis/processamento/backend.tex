@@ -47,7 +47,7 @@ da arquitetura do servidor.
     \begin{center}
         \includegraphics[scale=1]{figuras/rest_arch.jpg}
     \end{center}
-    \caption{\textit{Design} e Arquitetura do servidor Django}
+    \caption{\textit{Design} e Arquitetura do servidor Django \cite{serveruml}}
     \label{fig:rest_arch}
 \end{figure}
 
@@ -65,6 +65,13 @@ que irão utilizar os servidor. Essa camada é responsável por gerir as rotas d
 as urls solicitadas a funções específicas. Após mapeado nas funções, estas irão verificar as permissões
 de cada requisição, bem como cada usuário que está solicitando uma determinada ação.
 
+Além disso, nesta camada, existe uma transformação importante para o consumo de dados por parte dos clientes.
+Esta é conhecida como serialização dos dados, tanto para quem envia, quanto para quem solicita.
+Sua responsabilidade é aplicar um modelo de dados formalizado na comunidade, conhecido como Json.
+Dessa forma, todo tipo de dado recebido, assim como os enviados são transformados  a partir
+dos dobjetos python. Esta fase é aplicada logo após a aplicação das rotas para as respectivas
+ações.
+
 As funções mapeadas na Tier passada utiliza de modelos preedefinidas na Tier de Business.
 Aqui são definidos os domínios da aplicação, bem como quais são as classes e negócio da
 aplicação. Nesta fase são definidos os tipos de usuários do sistema, as classes de sinais
@@ -74,3 +81,33 @@ A última camada, chamada de \textit{Data Tier} é responsável por lidar com a 
 de todos os usuários e sinais que são manipulados no sistema. Esta camada modela o
 bando de dados assim como foi definido na aplicação de negócios e aplica
 inserções neste a medida que novas requisições são feitas.
+
+\subsection{Projeto Desenvolvido}
+\label{sub:projetodesenvolvido}
+
+O projeto UMISS-BackEnd, desenvolvido exatamente na arquitetura apresentada na sessão
+\ref{sub:design_e_arquitetura_da_soluca_o}, possui entidades que deram formato à Business
+Tier do projeto, onde são definidas as propriedades do sistema, bem como ele atuará.
+
+No projeto, foi desenvolvido o diagrama de classes, que auxilia na atividade de compreender
+o domínio do projeto. Este está no Anexo \ref{anx:server_uml}.
+
+É possível visualizar que existem várias entidades de usuários. Isto foi desenvolvido pois
+existem dois tipos de usuários diferentes no sistema. Eles são o Paciente e o Monitor. Estes
+possuem atributos e comportamentos diferentes, gerando assim a necessidade de implementação
+de dois domínios diferentes.
+
+Da mesma maneira, existem três tipos de sinais corporais que são enviados pelo paciente.
+Esses sinais possuem características diferentes, bem como atributos. Dessa maneira, existe
+uma entidade generalista chamada \textit{BodySignal} com características comuns de todas. E
+foram criados as demais especializações com suas características  específicas. Elas são:
+
+\begin{itemize}
+    \item Sinais de temperatura corporal;
+    \item Sinais de batimento cardíaco;
+    \item Sinais de resitência galvânica.
+\end{itemize}
+
+Por fim, existem ligações dos usuários com os sinais corporiais, sendo que os pacientes
+são donos dos sinais corporais. Assim como exitem pacientes que possuem monitores ligados,
+gerando um relacionamento cíclico entre as entidades de usuário.
