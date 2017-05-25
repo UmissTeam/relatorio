@@ -1,0 +1,74 @@
+\chapter{Plano de Integração}
+\label{chapter:plano}
+
+Neste capítulo apresentamos nosso planejamento para a integração dos diferentes
+subsistemas, que deve ocorrer na terceira etapa do projeto. Adaptamos os pontos
+levantados no guia do PMBOK, adequando o plano ao contexto da disciplina, e
+focando na integração de subsistemas de um projeto de engenharia, e não da área
+de gestão de pessoas.
+
+A integração dos subsistemas ocorrerá no tempo das aulas, contudo, caso
+necessário, em outros horários o grupo se reunirá de forma a conseguir a
+integração completa. Ainda, ressaltamos que o subsistema de Processamento de
+Sinais e Monitoramento não é fortemente acoplado aos outros subsistemas, de
+modo que a integração entre ele e o restante do projeto será fácil e não
+carecerá de um grande esforço. Os outros dois subsistemas, Projeto Estrutural
+e Controle e Alimentação, por outro lado, são bem acoplados, e um maior cuidado
+será tomado a respeito desses dois subsistemas.
+
+\section{Integração do subsistema Processamento de Sinais e Monitoramento}
+
+Como mencionado, o subsistema de Processamento de Sinais e Monitoramento não
+deverá apresentar grandes problemas na integração, principalmente por não ser
+acoplado aos outros subsistemas. Os únicos componentes físicos desse subsistema
+são os componentes eletrônicos relacionados a aquisição de sinais (sensores,
+amplificadores, filtros e conversores) e o sistema embarcado (Raspberry Pi).
+Os outros componentes (servidor remoto, cliente \textit{frontend} e
+\textit{mobile}) estão na nuvem, e não causam impacto na integração com os
+outros componentes físicos.
+
+É esperado que os componentes físicos desse subsistema sejam alocados em um
+compartimento de fácil manutenção, para que seja facilmente manuseado durante
+os diversos testes. Além disso, esse compartimento deve disponibilizar saídas
+para os fios, que serão então conectados a outros subsistemas, ou
+disponibilizados para serem utilizados pelo paciente. Assim, a integração deve
+ocorrer da seguinte forma:
+
+\begin{enumerate}
+    \item Alocação dos componentes eletrônicos de modo seguro, mas que ocupe
+        o menor espaço possível, pois os outros subsistemas carecem de bastante
+        espaço;
+    \item Acoplamento do compartimento na parte inferior da cadeira (nos braços),
+        parafusando-o (incluindo o \textit{case} da Raspberry Pi);
+    \item Extensão e disponibilização dos cabos e dos sensores, para que sejam
+        facilmente utilizados pelos pacientes;
+    \item Extensão da bateria conectada a Raspberry Pi, e conexão entre ela e a
+        bateria do subsistema de Controle e Alimentação.
+\end{enumerate}
+
+\section{Cronograma}
+
+\begin{table}[!htbp]
+    \centering
+    \caption{Cronograma para a integração dos subsistemas.}
+    \label{tab:cronogramaintegracao}
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{|l|l|l|}
+            \hline
+            \textbf{Atividade} & \textbf{Responsável} & \textbf{Deadline} \\
+            \hline
+            Criar compartimento com sensores e embarcado & Afonso, Dylan, Gustavo, Tiago e Wilton & 08/06\\
+            \hline
+            Acoplamento do compoartimento na parte inferior da cadeira & Dylan e Afonso & 08/06 \\
+            \hline
+            Extensão e disponibilização dos cabos & Gustavo, Tiago e Wilton & 08/06 \\
+            \hline
+            Extensão da bateria da Raspberry Pi & Dylan e Afonso & 08/06 \\
+            \hline
+            Teste do subsistema de Processamento e Monitoramento & Afonso, Dylan, Gustavo, Tiago e Wilton & 08/06 \\
+
+            \hline
+
+        \end{tabular}
+    }
+\end{table}
