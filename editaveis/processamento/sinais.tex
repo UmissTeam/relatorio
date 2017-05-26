@@ -17,22 +17,23 @@ na temperatura\footnote{\url{http://www.ti.com/lit/ds/symlink/lm35.pdf}}.
 
 Foram também realizados testes e algoritmos para medição da temperatura corporal com
 termistores NTC, porém, os mesmo mostraram-se menos acurados devido ao seu comportamento
-não linear dado pela equação de \textit{Equação de Steinhart-Hart}
-\footnote{\url{lens.unifi.it/ew/dwl.php?dwl...mtyp=application/pdf}} e problemas de arredondamento
-de valores capturados pelo sistema embarcado. Dessa forma, foi decidido o uso do sensor LM35.
+não linear dado pela equação de \textit{Equação de
+Steinhart-Hart}\footnote{\url{http://www.sciencedirect.com/science/article/pii/0011747168900570?via\%3Dihub}}
+e problemas de arredondamento de valores capturados pelo sistema embarcado.
+Dessa forma, foi decidido o uso do sensor LM35.
 
-O sensor fabricado para medição da temperatura corporal, apresentado na \ref{fig:temp_ele},
-é aplicado à superfície da pele, no antebraço, possibilitando leitura facilitada
-e de forma menos invasiva. Uma vez em contato com o corpo do usuário,
-o sensor apresenta alteração nos valores lineares de temperatura até o momento de
-estabilidade com a temperatura corporal.
+O sensor fabricado para medição da temperatura corporal, apresentado na Figura
+\ref{fig:tempele}, é aplicado à superfície da pele, no antebraço, possibilitando
+leitura facilitada e de forma menos invasiva. Uma vez em contato com o corpo do
+usuário, o sensor apresenta alteração nos valores lineares de temperatura até o
+momento de estabilidade com a temperatura corporal.
 
 \begin{figure}[h!]
     \begin{center}
         \includegraphics[scale=0.075]{figuras/temp_ele.jpg}
     \end{center}
     \caption{Sensor para medição de temperatura corporal.}
-    \label{fig:temp_ele}
+    \label{fig:tempele}
 \end{figure}
 
 
@@ -40,7 +41,7 @@ O sistema de monitoramento de sinais de resistência galvânica da pele (GSR),
 tem como principal função o monitoramento de variações na umidade da pele do
 usuário, podendo indicar níveis perigosos de estresse ou até mesmo colapsos de
 hipoglicemia ou por fraqueza por falta de alimentação. O sistema consiste em
-dois eletrodos fabricados, como visto na na \ref{fig:gsr_ele}, para contato com o
+dois eletrodos fabricados, como visto na Figura \ref{fig:gsrele}, para contato com o
 antebraço do usuário, com uma distância fixa de 5 $cm$ entre eles, dessa forma,
 mantendo os valores das medições confiáveis para cada usuário com diferentes tipos de pele.
 
@@ -49,7 +50,7 @@ mantendo os valores das medições confiáveis para cada usuário com diferentes
         \includegraphics[scale=0.05]{figuras/gsr_ele.jpg}
     \end{center}
     \caption{Eletrodos fabricados para medição de umidade e resistência galvânica da pele.}
-    \label{fig:gsr_ele}
+    \label{fig:gsrele}
 \end{figure}
 
 Além disso, o circuito, visto na Figura \ref{fig:gsr_circ} embarcado conta com um
@@ -137,15 +138,6 @@ devido a sua alta resolução de 16 bits, capaz de converter valores analógicos
 digitais de 0 a 65535, e por sua taxa de amostragem de 800Hz, suficientes para a captura dos
 sinais a serem monitorados para o projeto. O conversor é conectado com a Raspberry Pi via protocolo I2C,
 possibilitando o uso de menos portas para o envio de até 4 sinais simultâneos.
-
-
-\begin{figure}[h!]
-    \begin{center}
-        \includegraphics[scale=0.5]{figuras/ads.jpg}
-    \end{center}
-    \caption{Conversor A/D ADS1115.}
-    \label{fig:ads}
-\end{figure}
 
 Uma vez com os sinais devidamente convertidos para digital, o sistema embarcado e de \textit{middleware}
 é responsável por monitorar os sinais, realizando verificações de seus valores a partir de calibrações
