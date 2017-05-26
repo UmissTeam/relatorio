@@ -8,13 +8,13 @@ de desenvolvimento. Por fim, trataremos as instâncias do projeto desenvolvido.
 \subsection{Papel da API}
 \label{sub:papel_da_api}
 O \textit{backend} do sistema, responsável por fazer o controle das requisições,
-atuando como intermediador à cadeira e aos seus respectivos monitores   
+atuando como intermediador à cadeira e aos seus respectivos monitores
 foi desenvolvida utilizando o \textit{Django Rest Framework}. Este é uma
 referência no mundo de desenvolvimento \textit{Python} para \textit{API's Rest}.
 
 O backend manipula todos os dados enviados pela cadeira, utilizando a \textit{Rasp}
 executa o processamento destes dados e envia notificações para os \textit{Smartphones}
-cadastrados no sistama. Além disso, serve dados para uma interface web de controle
+cadastrados no sistema. Além disso, serve dados para uma interface web de controle
 do monitor.
 
 A manipulação dos dados é feita de forma segura, tratando a autenticação dos usuários
@@ -41,7 +41,7 @@ O django utiliza de uma arquitetura própria para padronização e aplicação d
 práticas em desenvolvimento de API's. Esta arquitetura está dividida em camadas,
 que são responsáveis por funções específicas e cada uma tem seu papel definido
 para a manipulação de dados no sistema. A seguir está uma ilustração do funcionamento
-da arquitetura do servidor. 
+da arquitetura do servidor.
 
 \begin{figure}
     \begin{center}
@@ -72,7 +72,7 @@ Dessa forma, todo tipo de dado recebido, assim como os enviados são transformad
 dos objetos python. Esta fase é aplicada logo após a aplicação das rotas para as respectivas
 ações.
 
-As funções mapeadas na Tier passada utiliza de modelos preedefinidos na Tier de Business.
+As funções mapeadas na Tier passada utiliza de modelos predefinidos na Tier de Business.
 Aqui são definidos os domínios da aplicação, bem como quais são as classes e negócio da
 aplicação. Nesta fase são definidos os tipos de usuários do sistema, as classes de sinais
 corporais do paciente e toda parte  de negócios da aplicação.
