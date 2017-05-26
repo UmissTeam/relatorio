@@ -87,6 +87,27 @@ com a Figura \ref{fig:complete_chair}, que foi criada no ambiente CAD:
     \label{fig:complete_chair}
 \end{figure}
 
+\section{Integração do subsistema Controle e Alimentação}
+
+O acoplamento entre o sistema Controle e Alimentação e os demais sistemas físicos se
+dará através da instalação do circuito elétrico na estrutura da cadeira. O circuito deve conter
+um sistema de proteção, que possa ser facilmente acessado pelo usuário em caso de
+emergência, também deve ser desenvolvido um compartimento para que os circuitos dos
+drivers sejam alocados de maneira que possam ser facilmente acessados para possíveis
+manutenções e testes. Eles ficarão preferencialmente na parte inferior da cadeira.
+
+A etapa de integração do sistema de alimentação demanda um maior cuidado, além de
+ser de vital importância para a conclusão do projeto, dessa forma algumas atividades devem
+ser bem definidas para que o projeto seja concluído com êxito. Sendo assim, a integração deve
+ocorrer da seguinte forma:
+
+\begin{enumerate}
+  \item Alocação do sistema de controle dos motores (drivers), de forma acessível;
+  \item Montagem do circuito de alimentação, incluindo extensão para componentes
+  eletrônicos dos demais subsistemas;
+  \item Realização de testes para verificação do correto funcionamento do circuito proposto.
+\end{enumerate}
+
 \section{Cronograma}
 
 \begin{table}[!htbp]
@@ -94,15 +115,13 @@ com a Figura \ref{fig:complete_chair}, que foi criada no ambiente CAD:
     \caption{Cronograma para a integração dos subsistemas.}
     \label{tab:cronogramaintegracao}
     \resizebox{\textwidth}{!}{%
-        \begin{tabular}{|l|l|l|}
+        \begin{tabular}{|p{10cm}|p{6cm}|l|}
             \hline
             \textbf{Atividade} & \textbf{Responsável} & \textbf{Deadline} \\
             \hline
             Desenvolvimento do sensor de presença & Afonso & 01/06 \\
             \hline
             Criar compartimento com sensores e embarcado & Afonso, Dylan, Gustavo, Tiago e Wilton & 08/06\\
-            \hline
-            Acoplamento do compartimento na parte inferior da cadeira & Dylan e Afonso & 08/06 \\
             \hline
             Acoplamento do módulo GPRS/3G aos outros componentes & Dylan e Afonso & 08/06 \\
             \hline
@@ -119,6 +138,12 @@ com a Figura \ref{fig:complete_chair}, que foi criada no ambiente CAD:
             Criação do compartimento dos eletrônicos do processamento de sinais e monitoramento & Nivaldo, Rafael e Lucas Matheus & 16/06 \\
             \hline
             Integração da atividade acima com a estrutura da cadeira & Nivaldo, Rafael e Lucas Matheus & 23/06 \\
+            \hline
+            Desenvolver compartimento para alocação do sistema de controle dos motores & Mariana, Lunara, Cesar, Felipe e Johnson & 08/06 \\
+            \hline
+            Montagem do circuito de alimentação adaptado à estrutura da cadeira & Mariana, Lunara, Cesar, Felipe e Johnson & 08/06 \\
+            \hline
+            Teste do subsistema de Controle e Alimentação após integração aos demais subsistemas & Mariana, Lunara, Cesar, Felipe e Johnson & 08/06 \\
             \hline
 
         \end{tabular}
