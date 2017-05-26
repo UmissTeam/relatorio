@@ -2,19 +2,17 @@
 
 \section{Dimensionamento de Motores e Sistema Energético}
 
-Neste projeto serão utilizados dois motores de corrente contínua
+Neste projeto estão sendo utilizados dois motores de corrente contínua
 \footnote{O \textit{datasheet} do motor utilizado pode ser encontrado em:
-\url{http://www.motron.com.br/?pg=mr210}.}.
+\url{http://www.motron.com.br/?pg=mr210}.}. O dimensionamento do motor foi
+realizado de acordo com o equacionamento e os dados obtidos do fornecedor,
+também disponíveis no \textit{datasheet}.
 
 \begin{figure}[h!]
   \centering
   \includegraphics{figuras/Motor.jpg}
   \caption{Foto ilustrativa do motor utilizado no projeto.}
 \end{figure}
-
-\subsection{Dimensionamento do Motor}
-
-O dimensionamento do motor foi realizado de acordo com o equacionamento e os dados obtidos do fornecedor a seguir.
 
 O modelo do motor utilizado é o MR 210 VER 240, com tensão de 12V, fabricado
 pela Motron, e como a redução utilizada (sistema de transmissão) é de 6 para 1,
@@ -46,15 +44,20 @@ Onde \(F_a\) é a força de aceleração e \(F_r\)  é a força de resistência 
 \[F_a = M*a\]
 \[F_R = M*g*\mu\]
 
-A Rotação nominal do motor é de 215 RPM, usando a relação de transmissão a rotação da roda movida é reduzida seis vezes, então \(n_2\) = 35,84 RPM. A partir do valor de \(n_2\) e do raio da roda é possível encontrar sua velocidade linear.
+A Rotação nominal do motor é de 215 RPM, usando a relação de transmissão a
+rotação da roda movida é reduzida seis vezes, então \(n_2\) = 35,84 RPM. A
+partir do valor de \(n_2\) e do raio da roda é possível encontrar sua
+velocidade linear.
 
 \[V_2 = 35.84 * \frac{2*\pi}{60}*0.3\ = 1.1 m/s\] 
 
-A partir do tempo de 4 segundos definido para se alcançar a velocidade máxima é possível calcular a aceleração da cadeira.
+A partir do tempo de 4 segundos definido para se alcançar a velocidade máxima
+é possível calcular a aceleração da cadeira.
 
 \[a = \frac{1.1}{4} = 0.28 m/s^2\]
 
-A partir da equação para força movida é possível encontrar a massa que os motores poderão mover.
+A partir da equação para força movida é possível encontrar a massa que os
+motores poderão mover.
 
 \[960 = M*a + M*g*\mu = 0.28M + 2.94M\]
 \[M = \frac{960}{3.22} = 298 Kg\]
@@ -76,31 +79,59 @@ os dados obtidos a partir das figuras a seguir.
   \caption{Dados da bateria usada no projeto.}
 \end{figure}
 
-Foi definido que para fins de teste e apresentação o tempo de funcionamento da cadeira será de 15 minutos, com essa informação e a corrente nominal do sistema, de 24 A, é possível estimar a bateria necessária. 
+Foi definido que para fins de teste e apresentação o tempo de funcionamento da
+cadeira será de 15 minutos, com essa informação e a corrente nominal do
+sistema, de 24A, é possível estimar a bateria necessária. 
 
 \[M = 24*0.25 = 6 Ah\]
 
-O grupo adquiriu uma bateria automotiva de 45 Ah para ser utilizada nos testes, o que é mais de sete vezes maior do que a bateria dimensionada.
+O grupo adquiriu uma bateria automotiva de 45 Ah para ser utilizada nos testes,
+o que é mais de sete vezes maior do que a bateria dimensionada.
 
 \section{Carregador para bateria}
 
- Um carregador constitui-se de uma fonte que estabelece uma corrente em sentido contrário na célula, pilha ou bateria que se deseja carregar. O conceito em volta de se recarregar uma bateria é bastante simples: ao passar pela substância fornecedora de energia uma corrente no sentido contrário àquela que ela fornece normalmente, a reação se inverte e a substância "absorve" a energia liberada, voltando à sua condição inicial. (BAHIA, 2015)
+ Um carregador constitui-se de uma fonte que estabelece uma corrente em sentido
+ contrário na célula, pilha ou bateria que se deseja carregar. O conceito em
+ volta de se recarregar uma bateria é bastante simples: ao passar pela
+ substância fornecedora de energia uma corrente no sentido contrário àquela que
+ ela fornece normalmente, a reação se inverte e a substância "absorve" a
+ energia liberada, voltando à sua condição inicial \cite{bahiadesenvolvimento}.
 
-A recarga da bateria pode ser feita de forma rápida ou lenta. A carga rápida ou lenta nada mais é do que o nível de corrente aplicado numa bateria para atingir o seu nível de carga num determinado tempo. A carga rápida consiste em aplicar níveis de correntes elevados para reduzir o tempo de recarga. A elevação da corrente provoca superaquecimento da bateria e em consequência reduz significativamente a sua vida útil. Este tipo de recarga rápida não é recomendado. O sistema recomendado para a recarga de baterias é o de carga lenta, pois o de carga rápida provoca muitos danos à bateria e por isso, não deve ser utilizado. Para isso, recomenda-se utilizar como corrente de recarga mínima de 5\% e máxima de 10\% da capacidade nominal em Ah da bateria. (SOARES et al., 2012)
+A recarga da bateria pode ser feita de forma rápida ou lenta. A carga rápida ou
+lenta nada mais é do que o nível de corrente aplicado numa bateria para atingir
+o seu nível de carga num determinado tempo. A carga rápida consiste em aplicar
+níveis de correntes elevados para reduzir o tempo de recarga. A elevação da
+corrente provoca superaquecimento da bateria e em consequência reduz
+significativamente a sua vida útil. Este tipo de recarga rápida não é
+recomendado. O sistema recomendado para a recarga de baterias é o de carga
+lenta, pois o de carga rápida provoca muitos danos à bateria e por isso, não
+deve ser utilizado. Para isso, recomenda-se utilizar como corrente de recarga
+mínima de 5\% e máxima de 10\% da capacidade nominal em Ah da bateria
+\cite{soares2012sistema}.
 
-Tendo em vista a bateria escolhida para o projeto, que possui 45Ah de capacidade nominal, o carregador desenvolvido para a mesma deve fornecer corrente de recarga de aproximadamente 4,5A por volta de 10h. Como já explicitado, esse tempo se faz necessário para que a vida útil da bateria não seja comprometida. Dessa forma, de acordo com a disponibilidade de componentes encontrados no mercado, para a confecção do carregador, foi possível desenvolvê-lo de tal forma a fornecer 5A de corrente de recarga, diminuindo então, o tempo de recarga para 9h. Assim sendo, o carregador proposto foi desenvolvido seguindo as orientações descritas nos circuitos ilustrados nas figuras \ref{fig:transformador1} e \ref{fig:transformador2}, utilizando os seguintes materiais:
+Tendo em vista a bateria escolhida para o projeto, que possui 45Ah de
+capacidade nominal, o carregador desenvolvido para a mesma deve fornecer
+corrente de recarga de aproximadamente 4,5A por volta de 10h. Como já
+explicitado, esse tempo se faz necessário para que a vida útil da bateria não
+seja comprometida. Dessa forma, de acordo com a disponibilidade de componentes
+encontrados no mercado, para a confecção do carregador, foi possível
+desenvolvê-lo de tal forma a fornecer 5A de corrente de recarga, diminuindo
+então, o tempo de recarga para 9h. Assim sendo, o carregador proposto foi
+desenvolvido seguindo as orientações descritas nos circuitos ilustrados nas
+figuras \ref{fig:transformador1} e \ref{fig:transformador2}, utilizando os
+seguintes materiais:
 
 \begin{itemize}
-\item 1 transformador (entrada 110/220V, saída 15V 5ª); 
-\item 1 ponte retificadora 10A;
-\item fios vermelho e preto;
-\item 2 garras modelo “jacaré” (1 vermelho e 1 preto);
-\item 1 cabo de força;
-\item 1 fusível 10A;
-\item 1 porta fusível; 
-\item 1 LED; 
-\item 1 resistor de 1K\(\Omega\) ; 
-\item botão de liga desliga e caixa de madeira.
+    \item 1 transformador (entrada 110/220V, saída 15V 5ª); 
+    \item 1 ponte retificadora 10A;
+    \item fios vermelho e preto;
+    \item 2 garras modelo “jacaré” (1 vermelho e 1 preto);
+    \item 1 cabo de força;
+    \item 1 fusível 10A;
+    \item 1 porta fusível; 
+    \item 1 LED; 
+    \item 1 resistor de 1K\(\Omega\) ; 
+    \item botão de liga desliga e caixa de madeira.
 \end{itemize}
 
 \begin{figure}[h!]
@@ -156,7 +187,10 @@ tensão e o código de controle.
 
 \subsection{Circuito de Chaveamento}
 
-A figura \ref{fig:chaveamento} ilustra o circuito de chaveamento, o qual é responsável por chavear as entradas do PWM com a ponte H e indicar ao circuito para qual sentido o motor deve rodar, seja ela no seu sentido direto ou inverso. O circuito projetado funciona da seguinte maneira:
+A Figura \ref{fig:chaveamento} ilustra o circuito de chaveamento, o qual é
+responsável por chavear as entradas do PWM com a ponte H e indicar ao circuito
+para qual sentido o motor deve rodar, seja ela no seu sentido direto ou inverso.
+O circuito projetado funciona da seguinte maneira:
 
 \begin{figure}[h!]
   \centering
@@ -206,7 +240,7 @@ ilustra o circuito de teste montado.
 \subsection{Ponte H}
 
 A ponte H é responsável por fazer os motores girarem para os sentidos desejados, ou seja, sentido direto ou sentido inverso.
-A figura \ref{fig:ponte} ilustra a ponte H realizada.
+A Figura \ref{fig:ponte} ilustra a ponte H realizada.
 
 \begin{figure}[h!]
   \centering
@@ -244,7 +278,7 @@ trilhas devem suportar correntes de até 50 A.
 
 O circuito dobrador de tensão, como dito anteriormente, é necessário para
 realizar o chaveamento do circuito. O dobrador foi realizado utilizando o CI
-555 em sua configuração astável. A figura \ref{fig:dobrador} ilustra o circuito do dobrador de tensão
+555 em sua configuração astável. A Figura \ref{fig:dobrador} ilustra o circuito do dobrador de tensão
 
 \begin{figure}[h!]
   \centering
@@ -262,7 +296,7 @@ O \textit{joystick} é constituído de 2 potenciômetros que têm seus valores
 analógicos medidos pelo Arduíno. Em seu ponto inicial, os valores digitais do eixo x e y
 do \textit{joystick} são, respectivamente, 511 e 491. Na direção positiva, os valores de
 y e x diminuem até chegarem à 0 em seu limite positivo, já na direção negativa,
-os valores aumentam até chegarem à 1024, em seu limite negativo. A figura
+os valores aumentam até chegarem à 1024, em seu limite negativo. A Figura
 \ref{fig:funcoes} mostra o \textit{joystick} e o Arduíno utilizados
 
 O sinal de PWM é gerado utilizando os timers do Arduíno. Cada motor possui 2 pulsos PWM (um para controlar a corrente no sentido direto e outro para o inverso), assim sendo, são necessários 4 timers para o controle total da cadeira. No código, os timers utilizados foram os TCCR1A, TCCR1B, TCCR2A, TCCR2B. O dutycicle dos PWMs pode ser modificados de acordo com o valor inserido em sua função, com 255 sendo 100\% de DutyCycle e 0 sendo 0\%.
@@ -274,7 +308,15 @@ O sinal de PWM é gerado utilizando os timers do Arduíno. Cada motor possui 2 p
     \label{fig:funcoes}
 \end{figure}
 
-Foram criadas funções para os movimentos da cadeira (parado, frente, trás, curva à direita e curva à esquerda). Essas funções são chamadas quando executadas pelo usuário no joystick, através de lógica condicional. Também é modificado o DutyCycle do PWM de acordo com a intensidade do comando no joystick. Um exemplo de função pode ser visto na figura acima.
+Foram criadas funções para os movimentos da cadeira (parado, frente, trás,
+curva à direita e curva à esquerda). Essas funções são chamadas quando
+executadas pelo usuário no \textit{joystick}, através de lógica condicional.
+Também é modificado o DutyCycle do PWM de acordo com a intensidade do comando no
+\textit{joystick}. Um exemplo de função pode ser visto na figura acima.
 
-Há também condições para garantir que a cadeira não dê uma aceleração súbita, evitando assim riscos de quedas por parte do usuário. Essas funções garantem que, ao acionar os motores com força acima de 75\% saindo do repouso, os sinais de PWM aumentem seus dutycyles pausadamente, indo de 0\% a 50\%, de 50\% a 70\% e de 70\% até o valor selecionado originalmente, com intervalos entre os acréscimos.
+Há também condições para garantir que a cadeira não dê uma aceleração súbita,
+evitando assim riscos de quedas por parte do usuário. Essas funções garantem
+que, ao acionar os motores com força acima de 75\% saindo do repouso, os sinais
+de PWM aumentem seus dutycycles pausadamente, indo de 0\% a 50\%, de 50\% a
+70\% e de 70\% até o valor selecionado originalmente, com intervalos entre os acréscimos.
 
