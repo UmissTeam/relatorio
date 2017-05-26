@@ -27,6 +27,18 @@ Os outros componentes (servidor remoto, cliente \textit{frontend} e
 \textit{mobile}) estão na nuvem, e não causam impacto na integração com os
 outros componentes físicos.
 
+Para o terceiro ponto de controle também faremos o desenvolvimento dos
+componentes que tornem o UMISS mais tolerante a falha, através de circuitos
+que adicionem redundância ao projeto. Essa tolerância ocorrerá através da
+adição do módulo GPRS/3G, que possibilitará uma alternância no envio de dados
+caso a \textit{internet} da residência do paciente esteja indisponível, ou
+ainda em casos onde a energia da residência ou fatores externos afetem a
+conexão. Outro esforço será empregado na
+adição dos componentes que detectam a presença do paciente na cadeira, que
+será importante em diversos cenários.  Por exemplo, caso o paciente caia da
+cadeira, os sensores de temperatura podem capturar valores anômalos, que devem
+ser ignorados.
+
 É esperado que os componentes físicos desse subsistema sejam alocados em um
 compartimento de fácil manutenção, para que seja facilmente manuseado durante
 os diversos testes. Além disso, esse compartimento deve disponibilizar saídas
@@ -57,16 +69,19 @@ ocorrer da seguinte forma:
             \hline
             \textbf{Atividade} & \textbf{Responsável} & \textbf{Deadline} \\
             \hline
+            Desenvolvimento do sensor de presença & Afonso & 01/06 \\
+            \hline
             Criar compartimento com sensores e embarcado & Afonso, Dylan, Gustavo, Tiago e Wilton & 08/06\\
             \hline
-            Acoplamento do compoartimento na parte inferior da cadeira & Dylan e Afonso & 08/06 \\
+            Acoplamento do compartimento na parte inferior da cadeira & Dylan e Afonso & 08/06 \\
+            \hline
+            Acoplamento do módulo GPRS/3G aos outros componentes \\
             \hline
             Extensão e disponibilização dos cabos & Gustavo, Tiago e Wilton & 08/06 \\
             \hline
             Extensão da bateria da Raspberry Pi & Dylan e Afonso & 08/06 \\
             \hline
             Teste do subsistema de Processamento e Monitoramento & Afonso, Dylan, Gustavo, Tiago e Wilton & 08/06 \\
-
             \hline
 
         \end{tabular}
