@@ -88,7 +88,7 @@ O grupo adquiriu uma bateria automotiva de 45 Ah para ser utilizada nos testes, 
 
 A recarga da bateria pode ser feita de forma rápida ou lenta. A carga rápida ou lenta nada mais é do que o nível de corrente aplicado numa bateria para atingir o seu nível de carga num determinado tempo. A carga rápida consiste em aplicar níveis de correntes elevados para reduzir o tempo de recarga. A elevação da corrente provoca superaquecimento da bateria e em consequência reduz significativamente a sua vida útil. Este tipo de recarga rápida não é recomendado. O sistema recomendado para a recarga de baterias é o de carga lenta, pois o de carga rápida provoca muitos danos à bateria e por isso, não deve ser utilizado. Para isso, recomenda-se utilizar como corrente de recarga mínima de 5\% e máxima de 10\% da capacidade nominal em Ah da bateria. (SOARES et al., 2012)
 
-Tendo em vista a bateria escolhida para o projeto, que possui 45Ah de capacidade nominal, o carregador desenvolvido para a mesma deve fornecer corrente de recarga de aproximadamente 4,5A por volta de 10h. Como já explicitado, esse tempo se faz necessário para que a vida útil da bateria não seja comprometida. Dessa forma, de acordo com a disponibilidade de componentes encontrados no mercado, para a confecção do carregador, foi possível desenvolvê-lo de tal forma a fornecer 5A de corrente de recarga, diminuindo então, o tempo de recarga para 9h. Assim sendo, o carregador proposto foi desenvolvido seguindo as orientações descritas nos circuitos ilustrados nas \textbf{\textit{FIGURAS 6 e 7}}, utilizando os seguintes materiais:
+Tendo em vista a bateria escolhida para o projeto, que possui 45Ah de capacidade nominal, o carregador desenvolvido para a mesma deve fornecer corrente de recarga de aproximadamente 4,5A por volta de 10h. Como já explicitado, esse tempo se faz necessário para que a vida útil da bateria não seja comprometida. Dessa forma, de acordo com a disponibilidade de componentes encontrados no mercado, para a confecção do carregador, foi possível desenvolvê-lo de tal forma a fornecer 5A de corrente de recarga, diminuindo então, o tempo de recarga para 9h. Assim sendo, o carregador proposto foi desenvolvido seguindo as orientações descritas nos circuitos ilustrados nas figuras \ref{fig:transformador1} e \ref{fig:transformador2}, utilizando os seguintes materiais:
 
 \begin{itemize}
 \item 1 transformador (entrada 110/220V, saída 15V 5ª); 
@@ -107,12 +107,14 @@ Tendo em vista a bateria escolhida para o projeto, que possui 45Ah de capacidade
   \centering
     \includegraphics[scale=0.5]{figuras/Transformador1.jpg}
   \caption{Circuito de entrada do transformador.}
+    \label{fig:transformador1}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
     \includegraphics[scale=0.5]{figuras/Transformador2.jpg}
   \caption{Circuito de saída do transformador.}
+    \label{fig:transformador2}
 \end{figure}
 
 Durante o carregamento da bateria, com o auxílio de um multímetro, pode-se
@@ -154,20 +156,21 @@ tensão e o código de controle.
 
 \subsection{Circuito de Chaveamento}
 
+A figura \ref{fig:chaveamento} ilustra o circuito de chaveamento, o qual é responsável por chavear as entradas do PWM com a ponte H e indicar ao circuito para qual sentido o motor deve rodar, seja ela no seu sentido direto ou inverso. O circuito projetado funciona da seguinte maneira:
+
 \begin{figure}[h!]
   \centering
   \includegraphics[scale=0.3]{figuras/Chaveamento.jpg}
   \caption{Circuito de Chaveamento.}
+    \label{fig:chaveamento}
 \end{figure}
 
-A figura acima ilustra o circuito de chaveamento, o qual é responsável por chavear as entradas do PWM com a ponte H e indicar ao circuito para qual sentido o motor deve rodar, seja ela no seu sentido direto ou inverso. O circuito projetado funciona da seguinte maneira:
-
 \begin{itemize}
-	\item Para que ocorra passagem de corrente nos transistores Q5 e Q6 é
+    \item Para que ocorra passagem de corrente nos transistores Q5 e Q6 é
         necessário que os transistores Q7 e Q8 estejam em saturação e,
         portanto, quando em corte, nenhum dos transistores é capaz de
         transmitir corrente;
-	\item Os capacitores C6 e C5 e os resistores R13 e R14 funcionam como
+    \item Os capacitores C6 e C5 e os resistores R13 e R14 funcionam como
         filtros passa-baixa que são responsáveis por obter a tensão analógica
         para o PWM;
     \item Com a tensão dos PWMs obtida ocorrerá a saturação de Q7 e Q8 ou não,
@@ -202,12 +205,14 @@ ilustra o circuito de teste montado.
 
 \subsection{Ponte H}
 
-A ponte H é responsável por fazer os motores girarem para os sentidos desejados, ou seja, sentido direto ou sentido inverso. A figura abaixo ilustra a ponte H realizada.
+A ponte H é responsável por fazer os motores girarem para os sentidos desejados, ou seja, sentido direto ou sentido inverso.
+A figura \ref{fig:ponte} ilustra a ponte H realizada.
 
 \begin{figure}[h!]
   \centering
     \includegraphics[scale=0.5]{figuras/Ponte_H.jpg}
   \caption{Ponte H.}
+    \label{fig:ponte}
 \end{figure}
 
 A ponte H projetada funciona da seguinte maneira: 
@@ -239,12 +244,13 @@ trilhas devem suportar correntes de até 50 A.
 
 O circuito dobrador de tensão, como dito anteriormente, é necessário para
 realizar o chaveamento do circuito. O dobrador foi realizado utilizando o CI
-555 em sua configuração astável. A figura abaixo ilustra o circuito do dobrador de tensão
+555 em sua configuração astável. A figura \ref{fig:dobrador} ilustra o circuito do dobrador de tensão
 
 \begin{figure}[h!]
   \centering
   \includegraphics[scale=0.9]{figuras/Dobrador.jpg}
   \caption{Circuito do dobrador de tensão.}
+    \label{fig:dobrador}
 \end{figure}
 
 \subsection{Controlador PWM - Software}
@@ -257,7 +263,7 @@ analógicos medidos pelo Arduíno. Em seu ponto inicial, os valores digitais do 
 do \textit{joystick} são, respectivamente, 511 e 491. Na direção positiva, os valores de
 y e x diminuem até chegarem à 0 em seu limite positivo, já na direção negativa,
 os valores aumentam até chegarem à 1024, em seu limite negativo. A figura
-abaixo mostra o \textit{joystick} e o Arduíno utilizados
+\ref{fig:funcoes} mostra o \textit{joystick} e o Arduíno utilizados
 
 O sinal de PWM é gerado utilizando os timers do Arduíno. Cada motor possui 2 pulsos PWM (um para controlar a corrente no sentido direto e outro para o inverso), assim sendo, são necessários 4 timers para o controle total da cadeira. No código, os timers utilizados foram os TCCR1A, TCCR1B, TCCR2A, TCCR2B. O dutycicle dos PWMs pode ser modificados de acordo com o valor inserido em sua função, com 255 sendo 100\% de DutyCycle e 0 sendo 0\%.
 
@@ -265,6 +271,7 @@ O sinal de PWM é gerado utilizando os timers do Arduíno. Cada motor possui 2 p
   \centering
   \includegraphics[width=1.0\textwidth]{figuras/Funcoes.jpg}
   \caption{Exemplo de função usado no controle PWM.}
+    \label{fig:funcoes}
 \end{figure}
 
 Foram criadas funções para os movimentos da cadeira (parado, frente, trás, curva à direita e curva à esquerda). Essas funções são chamadas quando executadas pelo usuário no joystick, através de lógica condicional. Também é modificado o DutyCycle do PWM de acordo com a intensidade do comando no joystick. Um exemplo de função pode ser visto na figura acima.
