@@ -222,6 +222,7 @@ TSWLatexianTemp*
 
 #logs
 *.log
+.DS_Store
 
 #PDFs
 
