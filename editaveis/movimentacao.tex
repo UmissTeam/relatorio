@@ -254,18 +254,12 @@ realizar o chaveamento do circuito. O dobrador foi realizado utilizando o CI
 Para se controlar os motores através do \textit{joystick}, foi utilizado um
 microcontrolador Arduino Nano. 
 
-O joystick é constituído de 2 potenciômetros que têm seus valores analógicos
-medidos pelo Arduíno. Em seu ponto inicial, os valores digitais do eixo x e y
+O \textit{joystick} é constituído de 2 potenciômetros que têm seus valores
+analógicos medidos pelo Arduíno. Em seu ponto inicial, os valores digitais do eixo x e y
 do \textit{joystick} são, respectivamente, 511 e 491. Na direção positiva, os valores de
 y e x diminuem até chegarem à 0 em seu limite positivo, já na direção negativa,
 os valores aumentam até chegarem à 1024, em seu limite negativo. A figura
-abaixo mostra o joystick e o arduíno utilizados
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=1.0\textwidth]{figuras/controlador.jpg}
-  \caption{Joystick (à esquerda) e microcontrolador (à direita) .}
-\end{figure}
+abaixo mostra o \textit{joystick} e o Arduíno utilizados
 
 O sinal de PWM é gerado utilizando os timers do Arduíno. Cada motor possui 2 pulsos PWM (um para controlar a corrente no sentido direto e outro para o inverso), assim sendo, são necessários 4 timers para o controle total da cadeira. No código, os timers utilizados foram os TCCR1A, TCCR1B, TCCR2A, TCCR2B. O dutycicle dos PWMs pode ser modificados de acordo com o valor inserido em sua função, com 255 sendo 100\% de DutyCycle e 0 sendo 0\%.
 
