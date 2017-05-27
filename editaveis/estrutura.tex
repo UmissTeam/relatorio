@@ -1,9 +1,9 @@
 \chapter{Estruturas}
 
-Como explicado no último relatório, o subsistema estrutural ficou encarregado
-de fazer a escolha de como obter uma cadeira de rodas e como fazer a
-transmissão do torque do motor para a roda.
-o
+O subsistema estrutural ficou encarregado
+de realizar a escolha de como obter uma cadeira de rodas e como realizar a fabricação da
+transmissão para aumento do torque do motor para a roda.
+
 Primeiramente, foi definido como seria feita a aquisição da cadeira de roda, se
 seria manufaturada, comprada ou emprestada. Pelo curto período de
 desenvolvimento de todo o projeto, e pelo fato dos componentes do grupo não
@@ -14,11 +14,11 @@ porém não houve possibilidade de arrecadar fundos para esse investimento e pel
 tempo não houve a captação de investidores para o projeto. Por fim, com o
 auxílio do Prof. Rhander Viana foi obtida uma cadeira de rodas do Hospital
 Universitário de Brasília (HUB) onde foi emprestada uma cadeira de roda
-Jaguaribe 1009. Ao fim do projeto, a cadeira de roda será devolvida ao hospital.
+Jaguaribe 1009. Ao fim do projeto, a cadeira de rodas será devolvida ao hospital.
 
 O segundo ponto principal destinado a estrutura, foi a escolha de um tipo de
 transmissão para realizar a movimentação da cadeira. Em conjunto com o
-subsistema de alimentação a forma escolhida para transmitir o torque do motor
+subsistema de controle e alimentação a forma escolhida para transmitir o torque do motor
 para a cadeira foi a utilização de um disco de atrito que fica em contato com a
 roda. Foi escolhida esta maneira para transmissão pelo fato de manufaturar uma
 caixa de redução para o motor seria algo que não teria tempo hábil, ou seria
@@ -26,7 +26,7 @@ algo fora dos padrões orçamentários do projeto.
 
 \section{Estrutura da Cadeira de Rodas}
 
-Como explicado anteriormente, foi escolhido a aquisição de uma cadeira junto ao
+Como explicado anteriormente, foi escolhida a aquisição de uma cadeira junto ao
 Hospital Universitário de Brasília, onde foi realizado o empréstimo da cadeira
 até o fim do projeto. A cadeira é a Cadeira de Rodas Jaguaribe 1009, como mostra
  a Figura \ref{fig:original_chair} abaixo.
@@ -52,8 +52,8 @@ cadeira em perfeito estado.
 
 Como não foi necessário a manufatura da cadeira, apenas realizamos a modelagem
 da cadeira de rodas em ambiente CAD para ter uma primeira impressão das
-primeiras modificações que seriam necessárias. Como o escopo do projeto abrange
-uma cadeira de rodas elétrica que faz monitoramentos de saúde do usuário, a
+modificações necessárias. Como o escopo do projeto abrange
+uma cadeira de rodas motorizada, que realiza monitoramentos de saúde do usuário, a
 cadeira teria que possuir alguns detalhes na estrutura. A cadeira modelada em
 ambiente CAD é apresentada na Figura \ref{fig:first_cad_chair}.
 
@@ -65,7 +65,7 @@ ambiente CAD é apresentada na Figura \ref{fig:first_cad_chair}.
     \label{fig:first_cad_chair}
 \end{figure}
 
-Na Figura \ref{fig:first_cad_chair} é possível perceber a inserção da disco de
+Na Figura \ref{fig:first_cad_chair} é possível perceber a inserção do disco de
 atrito no projeto, para realização do papel da transmissão, utilização de uma
 placa para suportar o disco de atrito e o motor, além da gaveta para suportar o
 peso e tornar de fácil remoção para recarga a bateria.
@@ -80,7 +80,7 @@ indústria para validar o projeto. Porém, como será adicionado parâmetros que
 não são de fábrica, serão feitas análises tanto estática quanto modal na
 cadeira para ter o projeto possuir confiabilidade. A análise estática é
 utilizada para identificar tanto as deformações como as tensões que a estrutura
-sofre quando excitada uma força. No projeto, foi utilizado o Software Solid
+sofre quando exercida uma força. No projeto, foi utilizado o Software Solid
 Works para fazer a análise, os parâmetros de estudo foram a Tensão de Von Mises
 e Deformação de Von Mises. Assim para a estrutura ser aceita, é necessário que
 a mesma tenha valores de tensão e deformação que não cause dano à estrutura,
@@ -89,7 +89,7 @@ como citado anteriormente é constituída de aço carbono 1009, onde é composto
 por 0,09\% de carbono, sendo assim um aço muito dúctil com baixa tensão de
 escoamento, no caso 170MPa. Porém, como o Solid Works possui uma lista de
 materiais reduzida, onde a tensão de escoamento mais próxima da usada na
-cadeira é de 206MPa, com o aço 1010, que é muito parecido com o 1009, sendo
+cadeira é de 180MPa, com o aço 1010, que é muito parecido com o 1009, sendo
 assim, para a análise estática será usado este material.
 A Figura \ref{fig:static_analisys} demonstra os dados obtidos com a análise.
 
