@@ -92,45 +92,61 @@ presença do usuário na cadeira não seja identificada.
     \label{fig:fall_ele}
 \end{figure}
 
-O sistema de monitoramento dos sinais de eletrocardiografia, apresentado na \ref{fig:ecg_circ}
-foi desenvolvido para captura dos sinais de pulso cardíaco a partir de eletrodos
-conectados ao antebraço do usuário, para que as medidas e a captura do sinais seja
+O sistema de monitoramento dos sinais de eletrocardiografia 
+foi desenvolvido para captura dos sinais de pulso cardíaco com um sensor 
+fotoelétrico e um LED verde de alto brilho, a partir de sinais de PPG (photoplethysmografia), 
+para que as medidas e a captura do sinais seja
 feita da forma menos invasiva possível. Para isso, o circuito deve ser capaz de
-capturar o sinal de ECG com precisão e assim, foi decidido pelo uso de um amplificador
-de instrumentação INA 128p, fabricado pela \textit{Texas Instruments}\footnote{\url{http://www.ti.com/lit/ds/symlink/ina129.pdf}},
-principalmente por suas características de alta rejeição de CMRR, além de ganho de fácil regulagem.
-Além do amplificador de instrumentação, foram projetados filtros passa-baixa para
-rejeição de frequências acima de 100Hz que possam interferir no sinal de eletrocardiograma,
-que para monitoramento, variam entre baixas frequências de 0.5Hz e 40Hz\footnote{ Yazıcıoglu RF, van Hoof C,
-Puers R. Biopotential Readout Circuits for Portable Acquisition Systems, 2009,
-Springer Science, ISBN: 978-1-4020-9092-9)}.
+capturar o sinal de pulso cardíaco por meio ótico com precisão e assim, foi 
+utilizado o sensor SEN-11574, apresentado na Figura \ref{fig:ecg_circ}, 
+baseado em um amplificador operacional MCP6001, 
+que possui produto ganho-banda de 1MHz e possui aplicações específicas para 
+amplificação de sinais provenientes de fotodiodos e fototransistores. Além disso, 
+o sistema consiste em um LED de alto brilho de cor verde e um sensor fotodiodo 
+APDS9008 de alta sensibilidade a variações de iluminação, capaz de capturar sinais 
+de PPG com a passagem e retorno de luz pelo tecido humano.
+Além do amplificador e do sensor selecionado, foram projetados filtros passa-alta para
+rejeição de frequências abaixo de 0.7Hz que possam aplicar um nível DC no sinal,
+que acabam tendo papel fundamental na etapa de captura da frequência cardíaca 
+pois elevam o sinal, dificultando a captura da frequência por meio de um algoritmo 
+presente no sistema de processamento digital. O circuito utilizado é dado pelo 
+esquemático apresentado na Figura \ref{fig:ecg_sch}
 
 \begin{figure}[h!]
     \begin{center}
-        \includegraphics[scale=0.1]{figuras/ecg_circ.jpg}
+        \includegraphics[scale=0.4]{figuras/ecg_circ.jpg}
     \end{center}
-    \caption{Circuito condicionador e de aquisição de sinais de eletrocardiograma.}
-    \label{fig:ecg_ele}
+    \caption{Sensor ótico para captura de sinais PPG da fabricante \textit{SparksFun}}
+    \label{fig:ecg_circ}
 \end{figure}
 
-O projeto de captura dos sinais de eletrocardiograma utilizando o amplificador INA128
-é dado a partir do ganho necessário para a visualização e processamento do sinal, com isso,
-o ganho do amplificador é dado pela equação:
+\begin{figure}[h!]
+    \begin{center}
+        \includegraphics[scale=0.4]{figuras/ecg_sch.png}
+    \end{center}
+    \caption{Esquemático do circuito condicionador de sinais PPG proposto pela fabricante}
+    \label{fig:ecg_sch}
+\end{figure}
+
+É importante ressaltar que os sinais de pulso cardíaco e eletrocardiograma variam 
+entre as baixas frequências de 0.5Hz e 40Hz\footnote{ Yazıcıoglu RF, van Hoof C,
+Puers R. Biopotential Readout Circuits for Portable Acquisition Systems, 2009,
+Springer Science, ISBN: 978-1-4020-9092-9)}, e dessa forma os sistemas de 
+condicionamento foram projetados de forma a atenuar frequências maiores que 40Hz 
+enquanto aplicam um alto ganho de tensão AC para a leitura do sinal original de 
+baixa amplitude, entre 0.1 mV e 5 mV. O módulo do ganho de tensão AC do sinal é dado pelo ganho do 
+amplificador MCP6001 em modo não inversor, dado por:
 
 \begin{equation}
-  Av = 1 + \frac{50000}{R_{G}}
+  Av = 1 + \frac{3.3M}{10k} = 330
 \end{equation}
 
-Sabe-se que a amplitude de sinais de ECG é baixa, na faixa de 0.1 $mV$ a 5 $mV$.
-Com isso, foi implementado um resistor $R_{G} = 100 \omega$, resultando em um ganho
-$Av = 501$. Dessa forma, o sinal terá uma amplitude de cerca de 2.5 $V$.
+Com esse ganho, é possível obter os valores de pico dos pulsos cadíacos na faixa 
+de 1.65 V.
 
-Após testes, os primeiro sinais obtidos foram satisfatórios para monitoramento de frequência
-cardíaca. Dessa forma, após o condicionamento, os sinais são enviados para um microcontrolador Arduino,
-que realiza a amostragem e envia os dados de forma Serial para o processador principal presente na
-Raspberry Pi, onde os dados são capturados pela porta USB, e dispostos em um \textit{array}, alterado
-a cada período de tempo. Para teste de visualização destes dados, os mesmo foram plotados no sistema
-da Raspberry Pi utilizando a biblioteca \textit{matplotlib}\footnote{\url{https://matplotlib.org/}}.
+O algoritmo de captura da frequência cardíaca via sinais de PPG foi desenvolvido 
+a fim de calcular o período entre sinais de pulsos sistólicos, eliminando a 
+ocorrência de pulsos diastólicos de menor amplitude.
 
 Após a captura e condicionamento de todos os sinais analógicos, os mesmos são direcionados
 para um módulo de conversão Analógico-Digital (A/D). O conversor selecionado foi o ADS1115 \footnote{\url{https://cdn-shop.adafruit.com/datasheets/ads1115.pdf}},
