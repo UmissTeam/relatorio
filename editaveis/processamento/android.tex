@@ -48,32 +48,3 @@ ao servidor e os gráficos serão criados.
 
 \end{itemize}
 
-\subsection{Arquitetura}
-
-A arquitetura do módulo Android foi elaborada da seguinte maneira, foram criados dois pacotes,
-um chamado \textit{com.umiss} que contém todas as \textit{fragments} e \textit{activities} da
-aplicação e um pacote chamado \textit{network} que contém as classes responsáveis pelas
-requisições e notificações.
-
-A MainActivity é a classe principal do sistema, ao iniciar, é executado o método 
-\textit{isLogged} que verifica se existe um \textit{token} de autenticação válido, caso
- exista, será instanciado as \textit{fragments} HeartBeatsFragment, GalvanicFragment e 
-TemperatureFragment que são responsáveis pela criação dos gráficos de batimentos cardíacos,
-temperatura e resistência galvânica respectivamente. Caso contrário, será instanciado a 
-\textit{activity} de \textit{Login}, a partir da \textit{activity} de \textit{Login} é
-possível abrir a \textit{activity} de Cadastro.
-
-O pacote \textit{network} contém a classe \textit{UMISSRest} que é responsável pelos métodos
-http \textit{POST}, \textit{GET} e \textit{PUT}. Todas as classes que realizam alguma 
-requisição com o \textit{backend} utilizam os métodos estáticos da classe \textit{UMISSRest}.
-As notificações são feitas pelo serviço Firebase Cloud Messaging através das classes
-MyFirebaseMessagingService que é responsável por criar uma notificação e pela classe
-MyFirebaseInstanceIDService que cria um identificador que é enviado ao \textit{backend}.
-
-
-\begin{figure}[H]
-    \begin{center}
-        \includegraphics[scale=0.5]{figuras/androidclass.eps}
-    \end{center}
-    \caption{Diagrama de classes do módulo Android.}
-\end{figure}
