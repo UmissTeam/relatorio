@@ -1,50 +1,21 @@
 \section{Módulo Android}
 
-O módulo Android do sistema é responsável pela visualização dos dados referentes a um
-determinado paciente e também pela notificação do usuário monitor via 
-\textit{push notification}.
+O módulo Android do sistema UMISS tinha como resultado uma aplicação mobile que 
+funcionasse nas versões 4.4 e acima do sistema operacional Android. Essa aplicação
+seria responsável por avisar os monitores de um paciente caso alguma não esteja de
+acordo com o paciente. Para isso foi implementado um sistema de Push Notification
+utilizando o serviço Firebase Cloud Message, o \textit{backend} consegue enviar 
+notificações para o Android através da biblioteca PyFCM, então a cada sinal identificado
+que o \textit{backend} sinalize como anormal, o Android recebe uma notificação.
 
-Este módulo atua como cliente, ou seja, os dados referentes a um paciente estão armazenados
-no \textit{backend} e a aplicação Android somente consome esses dados. O único valor que é
-armazenado na aplicação Android é um \textit{token} de autenticação enviado do servidor quando
-um usuário monitor efetua o \textit{login}.
-
-\subsection{Funcionalidades}
-
-\begin{itemize}
-
-\item \textit{Login}:
-
-É possível fazer login com um usuário do tipo monitor na aplicação, ao fazê-lo, é recebido um
-\textit{token} de autenticação do servidor que é armazenado no Android. Essa etapa se difere
-um pouco do \textit{frontend} pois no Android ocorre um passo adicional de enviar um
-identificador para o \textit{backend} ser capaz de enviar as notificações para o Android.
-
-\item Cadastro:
-
-Caso o usuário do tipo monitor ainda não tenha feito um cadastro no \textit{frontend}, é
-possível fazer o cadastro direto da aplicação Android, basta informar os dados de 
-\textit{login}, senha e o identificador da cadeira.
-
-\item Notificações:
-
-Caso o \textit{backend} receba um dado crítico do \textit{shoelace}, é enviado ao aplicativo
-Android uma notificação do tipo \textit{push notification} para que o usuário seja alertado
-que há algo errado acontecendo com o paciente.
-
-\item Gráficos:
-
-Os dados referentes à temperatura, batimentos cardíacos e resistência galvânica são exibidos
-em forma de gráfico, toda vez que o usuário abrir a aplicação uma nova requisição será feita
-ao servidor e os gráficos serão criados.
+Também era esperado que a aplicação \textit{mobile} seria capaz de visualizar
+os sinais em forma de gráfico. Esse resultado foi alcançado com sucesso utilizando
+a biblioteca GraphView, ao usuário monitor realizar \textit{login} na aplicação será
+feito uma requisição no servidor e então será criado os gráficos de batimentos cardiáco
+e de temperatura.
 
 
-\begin{figure}[H]
-    \begin{center}
-        \includegraphics[scale=0.25]{figuras/android.eps}
-    \end{center}
-    \caption{Layout atual da tela principal do módulo Android.}
-\end{figure}
 
-\end{itemize}
+
+
 
