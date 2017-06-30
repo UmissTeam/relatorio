@@ -1,26 +1,16 @@
 \section{\textit{Backend} \textit{Django}}
-Esta sessão tratará sobre o servidor do sistema, também conhecido como \textit{backend}
-ou \textit{API} \textit{Django}. Na primeira subsessão, é tratada uma breve descrição sobre as funções
-e características deste. A segunda apresenta o \textit{design} e a arquitetura
-de desenvolvimento. Por fim, trataremos as instâncias do projeto desenvolvido.
 
+Para gerenciar, processar e despachar dados, era esperado o desenvolvimento de
+um servidor que conseguisse suportar as requisições,
+de maneira que não fosse um gargalo para o projeto. Esse requisito foi atingido,
+através de um servidor \textit{backend} Django, que hospeda a API que é
+utilizada em grande escala pelos clientes (aplicativo Android e servidor
+Ember.JS) e pelo gerador de dados (\textit{middleware}).
 
-O projeto UMISS-BackEnd
-possui entidades que deram formato à Business
-\textit{Tier} do projeto, onde são definidas as propriedades do sistema, bem como ele atuará.
-
-No projeto, foi desenvolvido o diagrama de classes, que auxilia na atividade de compreender
-o domínio do projeto. Este está no Anexo \ref{anx:server_uml}.
-
-É possível visualizar que existem várias entidades de usuários. Isto foi desenvolvido pois
-existem dois tipos de usuários diferentes no sistema. Eles são o Paciente e o Monitor. Estes
-possuem atributos e comportamentos diferentes, gerando assim a necessidade de implementação
-de dois domínios diferentes.  Da mesma maneira, existem três tipos de sinais corporais que são enviados pelo paciente.
-Esses sinais possuem características diferentes, bem como atributos. Dessa maneira, existe
-uma entidade generalista chamada \textit{BodySignal} com características comuns de todas. E
-foram criados as demais especializações com suas características  específicas. Elas são:
-Sinais de temperatura corporal, Sinais de batimento cardíaco e Sinais de resistência galvânica.
-
-Por fim, existem ligações dos usuários com os sinais corporais, sendo que os pacientes
-são donos destes. Assim como exitem pacientes que possuem monitores ligados,
-gerando um relacionamento cíclico entre as entidades de usuário.
+Além dos requisitos que estabelecemos nos relatórios anteriores, também
+decidimos hospedar o servidor em um ambiente de produção, similar a um cenário
+real e profissional. Para o nosso servidor de produção também definimos um
+domínio, disponível em \footnote{\url{www.wheelshare-umiss.com/api}}. Por fim,
+definimos que por estarmos lidando com dados sigilosos (saúde), adicionamos ao
+escopo a adição do HTTPS, que implementamos utilizando os certificados gerados
+pelo \textit{let's encrypt}\footnote{\url{https://letsencrypt.org/}}.

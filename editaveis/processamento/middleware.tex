@@ -37,6 +37,12 @@ fim, ajustamos outros parâmetros (como os utilizados na conversão da
 resistência) utilizando outros resultados como base, de maneira experimental.
 
 Para diminuir o consumo de banda, criamos um mecanismo que aborta o envio de
-sinais redundantes.
+sinais redundantes. Todo sensor deve implementar seu próprio limiar, que é
+utilizado como filtro, que julga se a medição deve ou não ser enviada ao
+servidor \textit{backend}. Caso a nova medição seja diferente da última
+medição enviada para o servidor em uma porcentagem maior que o limiar
+estabelecido para o sinal, a nova medição é enviada. Dessa forma, dados
+redundantes não são enviados, o que alivia o processamento da Raspberry e do
+servidor, e possibilita maior escala do ecossistema, que passa a poder receber
+mais clientes (útil em cenários reais).
 
-\subsection{Arquitetura}
