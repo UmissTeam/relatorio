@@ -1,0 +1,26 @@
+\chapter{Trabalhos Futuros}
+\label{chapter:futuro}
+
+O resultado final do projeto, como um todo, está presente na Figura
+\ref{fig:cadeira_final}. De maneira geral, os subsistemas se integraram sem
+maiores problemas, principalmente pela parte mais complexa da integração
+ter sido feita no Ponto de Controle 2\footnote{Consideramos a integração entre
+os sensores e os servidores a integração mais complexa do sistema.}. Contudo,
+por tratar-se de um projeto protótipo, identificamos pontos de melhoria para
+trabalhos futuros, que podem auxiliar interessados na continuação do projeto.
+Esses pontos de melhoria são:
+\begin{itemize}
+    \item \textbf{Sistema de hard-realtime:} Acreditamos que a utilização de um
+        SO que atenda requisitos de hard-realtime agregue valor considerável a
+        solução. A utilização de um sistema como o Xenomai seria indispensável
+        em um cenário real, onde cada segundo é precioso.
+    \item \textbf{Utilização de compressão dos sinais:} Embora tenhamos
+        desenvolvidos algoritmos que filtrem a emissão de dados redundantes,
+        a compressão dos sinais antes do envio (e decompressão no destino)
+        otimizariam ainda mais o uso da banda.
+    \item \textbf{Módulo GPRS:} O sistema atual pode contar com a reconfiguração
+        do Linux para ativar redes já conhecidas e disponíveis, contudo, em um
+        cenário real, a utilização de redundância na rede seria indispensável.
+    \item \textbf{Sensor de pressão sanguínea:} O sensor de pressão sanguínea
+        traria mais informações de valor para o cliente final.
+\end{itemize}
